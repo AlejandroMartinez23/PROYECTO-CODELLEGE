@@ -13,8 +13,8 @@ img{
 	max-width: 100%;
 }
 .imgs{
-	height: 415px;
-	width: 100%;
+	height: 400px;
+	width: 490px;
 }
 .container-all{
 	position: relative;
@@ -58,7 +58,7 @@ img{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border: 2px solid white;
+	border: 2px solid black;
 	width: 16px;
 	height: 16px;
 	border-radius: 4px;
@@ -144,5 +144,3 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 	margin-right: 25px;
 	margin-top: 12px;
 }
-
-	

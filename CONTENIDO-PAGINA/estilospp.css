@@ -61,7 +61,7 @@ img{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border: 2px solid white;
+	border: 2px solid black;
 	width: 16px;
 	height: 16px;
 	border-radius: 4px;
@@ -143,8 +143,8 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 }
 .divcon{
 	margin-top: 20px;
-	background-color:lightgreen; 
-	height:160px; 
+	background-color:rgb(144, 238, 144); 
+	height:275px; 
 	width:263px; 
 	display:inline-block
 	}

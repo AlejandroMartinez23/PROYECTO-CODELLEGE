@@ -2,7 +2,7 @@
 	margin-left: 25px;
 	margin-right: 25px;
 	margin-top: 50px;
-	background-color:rgb(60, 114, 16)
+	background-color: white;
 	}
 .txt{
     text-align:center
@@ -22,9 +22,9 @@ img{
 	width: 100%;
 }
 .container-all{
-	margin-left: 5%;
-	height: 410px;
-	width: 90%;
+	margin-left: 10%;
+	height: 390px;
+	width: 80%;
 	border-radius: 6px;
 	overflow: hidden;
 }
@@ -49,7 +49,7 @@ img{
 }
 .pagination{
 	position: absolute;
-	bottom: 20px;
+	bottom: 40px;
 	left: 0;
 	display: flex;
 	flex-wrap: wrap;
@@ -149,6 +149,7 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 	display:inline-block
 	}
 .hipers{
-	font-size:23px; 
+	font-size:20px; 
+	font-family: fantasy;
 	text-align:center
 	}

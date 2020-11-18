@@ -4,29 +4,22 @@
 	margin-top: 50px;
 	background-color:rgb(60, 114, 16)
 	}
-.divcon{
-	background-color:lightgreen; height:160px; width:263px; display:inline-block
-	}
-.hipers{
-	font-size:23px; text-align:center
-	}
-.bor{
-    border=1px; solid; black
-    }
 .txt{
     text-align:center
 	}
 #imgestado{
+	position: absolute;
 	width: 50px;
 	height: 50px;
-	}
-#imgestado{
-	position: absolute;
 	margin-left: 91%;
 	margin-top: 5px;
 	}
 img{
 	max-width: 100%;
+}
+.imgs{
+	height: 415px;
+	width: 100%;
 }
 .container-all{
 	margin-left: 5%;
@@ -148,3 +141,14 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 		transform: translate3d(calc(-100% * 4), 0, 0);
 	}
 }
+.divcon{
+	margin-top: 20px;
+	background-color:lightgreen; 
+	height:160px; 
+	width:263px; 
+	display:inline-block
+	}
+.hipers{
+	font-size:23px; 
+	text-align:center
+	}

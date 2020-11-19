@@ -1,3 +1,35 @@
+#divLogin{
+	border: 2px solid black;
+	background:blue;
+	position:absolute;
+	top:5px;
+	right: 10px;
+	z-index: 1;
+	padding: 10px 1px;
+	border:2px solid red;
+	width:10%;
+	height:auto;
+	display: inline-block;
+	text-align: center;
+	display: flex;
+   	align-items: center;
+   	justify-content: center
+}
+#formLogin{
+	display:none;
+}
+#divLogin .button{
+	background: green;
+}
+#divLogin .button:hover{
+	background: red;
+	color:white;
+}
+#formLogin input{
+	position: inherit;
+	width: 70%;
+
+}
 .text{
 	text-align:center
 	}
@@ -143,4 +175,18 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 	margin-left: 37%;
 	margin-right: 25px;
 	margin-top: 12px;
+}
+footer{
+	background: black;
+	color: white;
+	padding: 5px 10px;
+	margin-top: 10px;
+}
+#buttonContact{
+	background-color: lightblue;
+	font-weight: bold;
+	color:navy;
+}
+#buttonContact:hover{
+	background-color: yellow;
 }

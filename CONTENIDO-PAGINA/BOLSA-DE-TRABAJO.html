@@ -8,6 +8,22 @@
         
     </head>
     <body style="background-color:lightgreen">
+        <div id="divLogin">
+			<img src="LoginImg.png" style="width:30px;height:auto" id="imgLogin">
+			<input type="button" value="Login" onclick="mostrar()" class="button"></input>
+
+			<form id="formLogin">
+				<p><label id="pUsuario" for="inputUsuario">Usuario</label></p>
+				<input type="text" id="inputUsuario" class="widthInputLog">
+
+				<p><label id="pContrasena" for="inputContra">Password</label></p>
+				<input type="password" id="inputContra" class="widthInputLog">
+
+				<p><input type="button" onclick="logearse()" value="Iniciar Sesion" id="BtnStartCloseSesion" class="button"></p>
+
+				<input type="button" value="Ocultar" onclick="ocultar()" class="button"></input>
+			</form>
+		</div>
         <div id="bxbh">
             <a href="PAGINA-PRINCIPAL.html"><img id="bh" src="HOME.png"></a>
         </div>
@@ -61,5 +77,22 @@
                     <img src="BDT4.png">
                 </label>
             </div>
+        </div>
+        <footer>
+            <h3>Contáctanos</h3>
+            <form name="footerForm">
+                <p><label>Nombre: </label>
+                <input type="text" id="footerinpNombre"></p>
+
+                <p><label>Correo: </label>
+                <input type="email" name="" id="footerinpEmail"></p>
+
+                <p><label>Dudas o sugerencias</label></p>
+                <textarea rows="10" cols="50" id="footerdoubts"></textarea><br>
+
+                <input type="button" onclick="objcontacto()" value="Enviar" id="buttonContact">
+            </form>
+        </footer>
+        <script src="FUNCIONES-JS.js"></script>
     </body>
 </html>

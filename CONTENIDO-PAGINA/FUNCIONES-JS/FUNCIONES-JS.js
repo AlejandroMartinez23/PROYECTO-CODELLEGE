@@ -2,7 +2,7 @@ USUARIO = "";
 PASSWORD = "";
 	function comprobacion(){
 		if (USUARIO=="code" && PASSWORD=="123") {
-			document.getElementById('imgLogin').src = "pokemon.png"
+			document.getElementById('imgLogin').src = "IMAGENES/pokemon.png"
 			document.getElementById("imgLogin").style.display = "inline-block"
 			document.getElementById('pUsuario').innerHTML = "USUARIO <br>" + USUARIO;
 			document.getElementById('inputUsuario').style.display = "none";

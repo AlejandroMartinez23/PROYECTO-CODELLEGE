@@ -1,12 +1,6 @@
 USUARIO = "";
 PASSWORD = "";
 	function comprobacion(){
-<<<<<<< HEAD
-		if (USUARIO=="code" && PASSWORD=="123"){
-			document.getElementById('imgLogin').src = "IMAGENES/pokemon.png"
-			document.getElementById("imgLogin").style.display = "inline-block"
-			document.getElementById('pUsuario').innerHTML = "USUARIO <br>" + USUARIO;
-=======
 		if (USUARIO=="code" && PASSWORD=="123") {
 			document.getElementById('imgLogin').src = "IMAGENES/pokemon.png";
 			document.getElementById("imgLogin").style.display = "inline-block";
@@ -15,7 +9,6 @@ PASSWORD = "";
 			botonLogin.style.height = "40px";
 			botonLogin.value = USUARIO;
 			document.getElementById('pUsuario').style.display = "none";
->>>>>>> a9400be50c3c8a575043834f6bdbc212a84968c3
 			document.getElementById('inputUsuario').style.display = "none";
 			document.getElementById('pContrasena').style.display = "none";
 			document.getElementById('inputContra').style.display = "none";

@@ -4,7 +4,7 @@ PASSWORD = "";
 		if (USUARIO=="code" && PASSWORD=="123") {
 			document.getElementById('imgLogin').src = "IMAGENES/pokemon.png";
 			document.getElementById("imgLogin").style.display = "inline-block";
-			botonLogin = document.getElementById('botonLogin');
+			botonLogin = document.getElementById('botonlogin');
 			botonLogin.style.width = "70%";
 			botonLogin.style.height = "40px";
 			botonLogin.value = USUARIO;
@@ -42,7 +42,7 @@ PASSWORD = "";
 			if(confirmacion){
 				USUARIO = "";
 				Password = "";
-				botonLogin = document.getElementById('botonLogin');
+				botonLogin = document.getElementById('botonlogin');
 				botonLogin.style.width = "auto";
 				botonLogin.style.height = "auto";
 				botonLogin.value = "Login"

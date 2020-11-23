@@ -9,6 +9,7 @@ PASSWORD = "";
 			document.getElementById('pContrasena').style.display = "none";
 			document.getElementById('inputContra').style.display = "none";
 			document.getElementById('BtnStartCloseSesion').value = "Cerrar Sesion"
+			//comentario
 		}
 		else{
 			alert("Usuario o contraseña incorrectos")

@@ -2,14 +2,17 @@ USUARIO = "";
 PASSWORD = "";
 	function comprobacion(){
 		if (USUARIO=="code" && PASSWORD=="123") {
-			document.getElementById('imgLogin').src = "IMAGENES/pokemon.png"
-			document.getElementById("imgLogin").style.display = "inline-block"
-			document.getElementById('pUsuario').innerHTML = "USUARIO <br>" + USUARIO;
+			document.getElementById('imgLogin').src = "IMAGENES/pokemon.png";
+			document.getElementById("imgLogin").style.display = "inline-block";
+			botonLogin = document.getElementById('botonLogin');
+			botonLogin.style.width = "70%";
+			botonLogin.style.height = "40px";
+			botonLogin.value = USUARIO;
+			document.getElementById('pUsuario').style.display = "none";
 			document.getElementById('inputUsuario').style.display = "none";
 			document.getElementById('pContrasena').style.display = "none";
 			document.getElementById('inputContra').style.display = "none";
-			document.getElementById('BtnStartCloseSesion').value = "Cerrar Sesion"
-			//comentario
+			document.getElementById('BtnStartCloseSesion').value = "Cerrar Sesion";
 		}
 		else{
 			alert("Usuario o contraseña incorrectos")
@@ -39,14 +42,19 @@ PASSWORD = "";
 			if(confirmacion){
 				USUARIO = "";
 				Password = "";
+				botonLogin = document.getElementById('botonLogin');
+				botonLogin.style.width = "auto";
+				botonLogin.style.height = "auto";
+				botonLogin.value = "Login"
 				document.getElementById('pUsuario').innerHTML = "Usuario:";
+				document.getElementById('pUsuario').style.display = "inline-block";
 				document.getElementById('inputUsuario').style.display = "inline-block";
 				document.getElementById('inputUsuario').value = ""
 				document.getElementById('pContrasena').style.display = "block";
 				document.getElementById('inputContra').style.display = "inline-block";
 				document.getElementById('inputContra').value = ""
 				document.getElementById('BtnStartCloseSesion').value = "Iniciar Sesion"
-				document.getElementById('imgLogin').src = "LoginImg.png"	
+				document.getElementById('imgLogin').src = "IMAGENES/LoginImg.png"	
 			}
 			else{
 				return false

@@ -1,25 +1,29 @@
+body{
+	background-color: whitesmoke;
+}
 #divLogin{
 	border: 2px solid black;
-	background:blue;
+	background: #66e679a9;
 	position:absolute;
-	top:5px;
+	top: 4px;
 	right: 10px;
 	z-index: 1;
 	padding: 10px 1px;
-	border:2px solid red;
+	border:2px solid #66e67979;
 	width:10%;
 	height:auto;
 	display: inline-block;
 	text-align: center;
 	display: flex;
    	align-items: center;
-   	justify-content: center
+	justify-content: center;
+	margin-top: 7px; 
 }
 #formLogin{
 	display:none;
 }
 #divLogin .button{
-	background: green;
+	background: #3286ec62;
 }
 #divLogin .button:hover{
 	background: red;
@@ -46,14 +50,14 @@ img{
 }
 .imgs{
 	height: 400px;
-	width: 490px;
+	width: 600px;
 }
 .container-all{
 	position: relative;
-	margin-top: 50px;
+	margin-top: 2%;
 	margin-left: 2%;
 	height: 65%;
-	width: 35%;
+	width: 45%;
 	border-radius: 6px;
 	overflow: hidden;
 }
@@ -172,15 +176,18 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 }
 #bxinfo{
 	position: absolute;
-	margin-left: 37%;
+	margin-left: 47%;
 	margin-right: 25px;
 	margin-top: 12px;
+	border-bottom: 2.5px solid rgb(180, 43, 43);
+	background-color: whitesmoke;
+	font-family: 'Franklin Gothic Medium';
 }
 footer{
-	background: black;
+	background: #3286ec;
 	color: white;
 	padding: 5px 10px;
-	margin-top: 10px;
+	margin-top: 5%;
 }
 #buttonContact{
 	background-color: lightblue;

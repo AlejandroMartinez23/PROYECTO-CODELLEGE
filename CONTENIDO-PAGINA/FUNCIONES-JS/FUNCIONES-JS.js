@@ -1,7 +1,7 @@
 USUARIO = "";
 PASSWORD = "";
 	function comprobacion(){
-		if (USUARIO=="code" && PASSWORD=="123") {
+		if (USUARIO=="code" && PASSWORD=="123"){
 			document.getElementById('imgLogin').src = "IMAGENES/pokemon.png"
 			document.getElementById("imgLogin").style.display = "inline-block"
 			document.getElementById('pUsuario').innerHTML = "USUARIO <br>" + USUARIO;
@@ -45,7 +45,7 @@ PASSWORD = "";
 				document.getElementById('inputContra').style.display = "inline-block";
 				document.getElementById('inputContra').value = ""
 				document.getElementById('BtnStartCloseSesion').value = "Iniciar Sesion"
-				document.getElementById('imgLogin').src = "LoginImg.png"	
+				document.getElementById('imgLogin').src = "IMAGENES/LoginImg.png"	
 			}
 			else{
 				return false

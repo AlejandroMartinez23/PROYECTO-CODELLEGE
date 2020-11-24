@@ -13,32 +13,79 @@ body{
 	width: 100%;
 	height: 13%;
 }
+#menu{
+	position: relative;
+	border:;
+	top:10%;
+	left: 20%;
+	list-style: none;
+	text-align: center;
+}
+#menu li{
+	width: 15%;
+	height: 30px;
+	border: 2px solid black;
+}
+#menu li a{
+	position: relative;
+	height: 100%;
+	background-color: #1E90FF;
+	text-decoration: none;
+	color:white;
+	display:block;
+}
+#menu > li{
+	float: left;
+}
+#menu li ul {
+	display:none;
+	position:absolute;
+}
+#menu li:hover > ul{
+	display: inline-block;
+}
+#menu li ul li{
+	list-style: none;
+	position: relative;
+	right: 106%;
+	width: 147%;
+}
 #divLogin{
 	border: 2px solid black;
-	background: #66e6798e;
+	background: #9400D3;
 	position: absolute;
 	top: 4px;
 	right: 10px;
 	z-index: 1;
-	padding: 10px 1px;
+	padding: 5px 1px;
 	border:2px solid #66e67979;
-	width:10%;
+	width:6%;
+	height:10px;
 	height:auto;
 	display: inline-block;
 	text-align: center;
 	display: flex;
    	align-items: center;
 	justify-content: center;
-	margin-top: 7px;   
+	margin-top: 7px;
+	border-radius: 50px;
+	color: white;   
 }
 #formLogin{
 	display:none;
 }
 #divLogin .button{
-	background: #3286ec62;
+	color: white;
+	background:none;
+	font-family: rubik one;
+	font-size: 1.3vw;
+	border: none;
+	width: 70%;
+	height: 35px;
+	border-radius: 0px 10px 10px 0px;
 }
 #divLogin .button:hover{
-	background: red;
+	background: #6A5ACD;
 	color:white;
 }
 #formLogin input{
@@ -48,6 +95,7 @@ body{
 #imgestado{
 	margin-left: 95px;
 	position: absolute;
+	display:;
 	width: 120px;
 	height: 102px;
 }
@@ -244,15 +292,17 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 	position: absolute;
 	margin-top: 113%;
 	width: 100%;
-	height: 35%;
+	height: 39%;
+	display: flex;
 }
 #contfooter{
 	color: white;
+	border:;
 	background-color: rgb(38, 36, 61);
 	box-shadow: 5px 5px 5px 5px rgba(38, 36, 61, 0.623);
 	display: inline-block;
-	position: absolute;
-	margin-top: 105%;
+	position: relative;
+	margin-top:5px;
 	margin-left: 5%;
 	padding-left: 2px;
 }
@@ -260,7 +310,12 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 	color: white;
 	display: inline-block;
 	font-size: 80px;
-	margin-left: 55%;
+	margin-left:20%;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	border:;
+	height:50px;
+	position: relative;
 }
 #buttonContact{
 	background-color: lightblue;

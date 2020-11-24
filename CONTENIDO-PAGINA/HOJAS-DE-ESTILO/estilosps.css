@@ -1,42 +1,94 @@
 body{
 	background-color: whitesmoke;
 }
-#divLogin{
+#menu{
+	position: relative;
+	border:;
+	bottom:7%;
+	left: 20%;
+	list-style: none;
+	text-align: center;
+}
+#menu li{
+	width: 15%;
+	height: 30px;
 	border: 2px solid black;
-	background: #66e679a9;
+}
+#menu li a{
+	position: relative;
+	height: 100%;
+	background-color: #1E90FF;
+	text-decoration: none;
+	color:white;
+	display:block;
+}
+#menu > li{
+	float: left;
+}
+#menu li ul {
+	display:none;
 	position:absolute;
+}
+#menu li:hover > ul{
+	display: inline-block;
+}
+#menu li ul li{
+	list-style: none;
+	position: relative;
+	right: 105%;
+	width: 147%;
+}
+#divLogin{
+	background: #9400D3;
+	position: absolute;
 	top: 4px;
 	right: 10px;
 	z-index: 1;
-	padding: 10px 1px;
+	padding: 5px 1px;
 	border:2px solid #66e67979;
-	width:10%;
+	width:6%;
+	height:10px;
 	height:auto;
 	display: inline-block;
 	text-align: center;
 	display: flex;
    	align-items: center;
 	justify-content: center;
-	margin-top: 7px; 
+	margin-top: 7px;
+	border-radius: 50px;
+	color: white;   
 }
 #formLogin{
 	display:none;
 }
 #divLogin .button{
-	background: #3286ec62;
+	color: white;
+	background:none;
+	font-family: rubik one;
+	font-size: 1.3vw;
+	border: none;
+	width: 70%;
+	height: 35px;
+	border-radius: 0px 10px 10px 0px;
 }
 #divLogin .button:hover{
-	background: red;
+	background: #6A5ACD;
 	color:white;
 }
 #formLogin input{
 	position: inherit;
 	width: 70%;
-
 }
 .text{
-	text-align:center
-	}
+	text-align:center;
+}
+#subtitulo{
+	border:;
+	width: 20%;
+	margin:auto;
+	position: relative;
+	padding: 0px;
+}
 #bxbh{
 	position: absolute;
 	margin-left: 10px;

@@ -6,6 +6,7 @@
 		<meta name="description" content="pagina principal"/>
 		<title> INICIO </title>
 		<link rel="stylesheet" href="HOJAS-DE-ESTILO/estilospp.css">
+		<link rel="stylesheet" href="HOJAS-DE-ESTILO/estilosfuncionpp.css">
 	</head>
 	<body>
 		<div class="container-all">
@@ -116,9 +117,10 @@
 				</script>
 		</div>
 		<div id="bxen">
+			<!--Login-->
 			<div id="divLogin">
 				<img src="IMAGENES/LoginImg.png" style="width:30px;height:auto" id="imgLogin">
-				<input type="button" value="Login" onclick="mostrar()" class="button" id="botonlogin"></input>
+				<input type="button" value="Login" onclick="mostrar()" class="button" id="botonLogin"></input>
 				<form id="formLogin">
 					<p><label id="pUsuario" for="inputUsuario">Usuario</label></p>
 					<input type="text" id="inputUsuario" class="widthInputLog">
@@ -134,25 +136,37 @@
 			<div id="bxescudo">
 					<img id="imgestado" src="IMAGENES/LOGO-GOBIERNO-ESTADO.png" alt="Escudo del estado de México">
 			</div>
+			<!--navbar-->
+			<ul id="menu">
+					<li><a>Lugares Turisticos</a>
+						<ul>
+							<li><a href="LUGARES-TURISTICOS2.html">Popocatepetl</a></li>
+							<li><a href="LUGARES-TURISTICOS.html">Zoologico Zacango</a></li>
+						</ul>
+					</li>
+					<li><a href="EVENTOS.html">Eventos</a></li>
+					<li><a href="HISTORIA.html">Historia</a></li>
+					<li><a href="BOLSA-DE-TRABAJO.html">Bolsa de Trabajo</a></li>
+			</ul>
 		</div>
 		<div id="footer">
-			<div id="bxcont">
-				<p>Contactanos</p>
+			<div id="contfooter">
+				<form name="footerForm">
+					<p><label>Nombre: </label>
+					<input type="text" id="footerinpNombre"></p>
+
+					<p><label>Correo: </label>
+					<input type="email" name="" id="footerinpEmail"></p>
+
+					<p><label>Dudas o sugerencias</label></p>
+					<textarea rows="5" cols="50" id="footerdoubts"></textarea><br>
+
+					<input type="button" onclick="objcontacto()" value="Enviar" id="buttonContact">
+				</form>
 			</div>
-		</div>
-		<div id="contfooter">
-			<form name="footerForm">
-				<p><label>Nombre: </label>
-				<input type="text" id="footerinpNombre"></p>
-
-				<p><label>Correo: </label>
-				<input type="email" name="" id="footerinpEmail"></p>
-
-				<p><label>Dudas o sugerencias</label></p>
-				<textarea rows="5" cols="50" id="footerdoubts"></textarea><br>
-
-				<input type="button" onclick="objcontacto()" value="Enviar" id="buttonContact">
-			</form>
+			<div id="bxcont">
+				<p>Contáctanos</p>
+			</div>
 		</div>
 		<script src="FUNCIONES-JS/FUNCIONES-JS.js"></script>
 	</body>

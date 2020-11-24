@@ -4,7 +4,7 @@ PASSWORD = "";
 		if (USUARIO=="code" && PASSWORD=="123") {
 			document.getElementById('imgLogin').src = "IMAGENES/pokemon.png";
 			document.getElementById("imgLogin").style.display = "inline-block";
-			botonLogin = document.getElementById('botonlogin');
+			botonLogin = document.getElementById('botonLogin');
 			botonLogin.style.width = "70%";
 			botonLogin.style.height = "40px";
 			botonLogin.value = USUARIO;
@@ -19,15 +19,13 @@ PASSWORD = "";
 		}
 	}
 	function mostrar(){
-		document.getElementById("formLogin").style.display = "block";
-		document.getElementById("divLogin").style.height = "auto";
-		document.getElementById('divLogin').style.display = "block";
+		var divLogin = document.getElementById('divLogin');
+		divLogin.setAttribute("id","divLoginf");
 	}
 
 	function ocultar(){
-		document.getElementById("formLogin").style.display = "none"
-		document.getElementById("divLogin").style.height = "30px"
-		document.getElementById('divLogin').style.display = "flex";
+		var divLogin = document.getElementById('divLogin');
+		divLoginf.setAttribute("id","divLogin");
 	}
 	function logearse(){
 		text = document.getElementById('BtnStartCloseSesion').value;
@@ -42,10 +40,10 @@ PASSWORD = "";
 			if(confirmacion){
 				USUARIO = "";
 				Password = "";
-				botonLogin = document.getElementById('botonlogin');
+				botonLogin = document.getElementById('botonLogin');
 				botonLogin.style.width = "auto";
 				botonLogin.style.height = "auto";
-				botonLogin.value = "Login"
+				botonLogin.value = "Login";
 				document.getElementById('pUsuario').innerHTML = "Usuario:";
 				document.getElementById('pUsuario').style.display = "inline-block";
 				document.getElementById('inputUsuario').style.display = "inline-block";

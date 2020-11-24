@@ -227,15 +227,6 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 		transform: translate3d(calc(-100% * 4), 0, 0);
 	}
 }
-.divcon{
-	background-color: white; 
-	box-shadow: 5px 5px 5px 5px white;
-	margin-right: 10px;
-	margin-left: 3%;
-	height: 100%; 
-	width: 28.7%; 
-	display:inline-block
-	}
 .hipers{
 	color: black;
 	font-size:20px; 
@@ -246,7 +237,7 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 	background-color: rgb(255, 255, 255);
 	position: absolute;
 	display: inline-block;
-	margin-top: 30.5%;
+	margin-top: 60%;
 	margin-left: 40%;
 	font-size: 50px;
 }
@@ -255,42 +246,51 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 	background-color: white;
 	font-family: 'Franklin Gothic Medium';
 }
+.divcon{
+	background-color: white; 
+	box-shadow: 5px 5px 5px 5px white;
+	margin-right: 10px;
+	margin-left: 3%;
+	height: 100%; 
+	width: 28.7%; 
+	display:inline-block
+	}
 #divcon1{
 	position: absolute;
-	margin-top: 40%;
+	margin-top: 70%;
 	display:inline-block;
 	height: 55%;
 }
 #divcon2{
 	position: absolute;
-	margin-top: 40%;
+	margin-top: 70%;
 	margin-left: 35.5%;
 	display:inline-block;
 	height: 55%;
 }
 #divcon3{
 	position: absolute;
-	margin-top: 40%;
+	margin-top: 70%;
 	margin-left: 68%;
 	display:inline-block;
 	height: 55%;
 }
 #divcon4{
 	position: absolute;
-	margin-top: 70%;
+	margin-top: 100%;
 	margin-left: 18.5%;
 	height: 55%;
 }
 #divcon5{
 	position: absolute;
-	margin-top: 70%;
+	margin-top: 100%;
 	margin-left: 50.5%;
 	height: 55%;
 }
 #footer{
 	background:  rgb(38, 36, 61);
 	position: absolute;
-	margin-top: 113%;
+	margin-top: 140%;
 	width: 100%;
 	height: 39%;
 	display: flex;

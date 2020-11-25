@@ -41,3 +41,10 @@
 	width: 70%;
 	height: 40px;
 }
+#pUsuarioF{
+	display:inline-block;
+	padding: 5px 20%;
+	border: 2px solid darkblue;
+	width:25%;
+	text-align: center;
+}

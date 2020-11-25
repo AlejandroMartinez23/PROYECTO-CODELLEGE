@@ -1,18 +1,23 @@
 USUARIO = "";
 PASSWORD = "";
+LOGIN = false;
 	function comprobacion(){
 		if (USUARIO=="code" && PASSWORD=="123") {
 			document.getElementById('imgLogin').src = "IMAGENES/pokemon.png";
 			document.getElementById("imgLogin").style.display = "inline-block";
-			botonLogin = document.getElementById('botonLogin');
+			var botonLogin = document.getElementById('botonLogin');
 			botonLogin.style.width = "70%";
 			botonLogin.style.height = "40px";
 			botonLogin.value = USUARIO;
-			document.getElementById('pUsuario').style.display = "none";
+			//document.getElementById('pUsuario').style.display = "none";
 			document.getElementById('inputUsuario').style.display = "none";
 			document.getElementById('pContrasena').style.display = "none";
 			document.getElementById('inputContra').style.display = "none";
 			document.getElementById('BtnStartCloseSesion').value = "Cerrar Sesion";
+			var pUsuario = document.getElementById('pUsuario');
+			pUsuario.setAttribute('id','pUsuarioF');
+			pUsuario.innerHTML = USUARIO;
+			LOGIN = true;
 		}
 		else{
 			alert("Usuario o contraseña incorrectos")
@@ -21,11 +26,18 @@ PASSWORD = "";
 	function mostrar(){
 		var divLogin = document.getElementById('divLogin');
 		divLogin.setAttribute("id","divLoginf");
+		document.getElementById('botonLogin').style.display = "none";
+		if(LOGIN==true){
+			/*
+			var pUsuario = document.getElementById('pUsuario');
+			pUsuario.setAttribute()*/
+		}
 	}
 
 	function ocultar(){
 		var divLogin = document.getElementById('divLogin');
 		divLoginf.setAttribute("id","divLogin");
+		document.getElementById("botonLogin").style.display = "block";
 	}
 	function logearse(){
 		text = document.getElementById('BtnStartCloseSesion').value;
@@ -40,19 +52,21 @@ PASSWORD = "";
 			if(confirmacion){
 				USUARIO = "";
 				Password = "";
-				botonLogin = document.getElementById('botonLogin');
+				var botonLogin = document.getElementById('botonLogin');
 				botonLogin.style.width = "auto";
 				botonLogin.style.height = "auto";
 				botonLogin.value = "Login";
-				document.getElementById('pUsuario').innerHTML = "Usuario:";
-				document.getElementById('pUsuario').style.display = "inline-block";
+				document.getElementById('pUsuarioF').innerHTML = "Usuario:";
+				document.getElementById('pUsuarioF').style.display = "inline-block";
 				document.getElementById('inputUsuario').style.display = "inline-block";
 				document.getElementById('inputUsuario').value = ""
 				document.getElementById('pContrasena').style.display = "block";
 				document.getElementById('inputContra').style.display = "inline-block";
 				document.getElementById('inputContra').value = ""
 				document.getElementById('BtnStartCloseSesion').value = "Iniciar Sesion"
-				document.getElementById('imgLogin').src = "IMAGENES/LoginImg.png"	
+				document.getElementById('imgLogin').src = "IMAGENES/LoginImg.png"
+				var pUsuario = document.getElementById('pUsuarioF');
+				pUsuario.setAttribute('id','pUsuario');
 			}
 			else{
 				return false

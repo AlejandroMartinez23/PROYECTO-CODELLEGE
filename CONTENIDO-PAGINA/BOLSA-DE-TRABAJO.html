@@ -1,16 +1,17 @@
 <DOCTYPE html>
 <html>
     <head>
-    <meta name="author" content="EQUIPO 2"/>
-    <meta name="description" content="bolsa de trabajo"/>
+        <meta charset="utf-8">
+        <meta name="author" content="EQUIPO 2"/>
+        <meta name="description" content="bolsa de trabajo"/>
         <title> BOLSA DE TRABAJO </title>
-        <link rel="stylesheet" href="HOJAS-DE-ESTILO/estilosps.css">
-        
+        <link rel="stylesheet" href="HOJAS-DE-ESTILO/bolsatrabajo.css">
+        <link rel="stylesheet" href="HOJAS-DE-ESTILO/estilosfuncionpp.css">
     </head>
-    <body style="background-color:lightgreen">
+    <body>
         <div id="divLogin">
 			<img src="IMAGENES/LoginImg.png" style="width:30px;height:auto" id="imgLogin">
-			<input type="button" value="Login" onclick="mostrar()" class="button"></input>
+			<input type="button" value="Login" onclick="mostrar()" class="button" id="botonLogin"></input>
 
 			<form id="formLogin">
 				<p><label id="pUsuario" for="inputUsuario">Usuario</label></p>
@@ -27,55 +28,78 @@
         <div id="bxbh">
             <a href="PAGINA-PRINCIPAL.html"><img id="bh" src="IMAGENES/HOME.png"></a>
         </div>
-        <h1 class="text"> ¡Bolsa de trabajo en el Estado de mexico! </h1>
+        <h1 id="titulo"> ¡Bolsa de trabajo en el Estado de méxico! </h1>
 <br>
-        <h2 class="text">Empresas mas conocidas en el estado</h2>
-        <div id="bxinfo">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <!--navbar-->
+        <div id="divNavBar">
+            <div id="menu">
+                <ul>
+                    <li class="item"><a>Lugares Turisticos</a>
+                        <ul id="submenu1">
+                            <li><a href="LUGARES-TURISTICOS2.html">Popocatepetl</a></li>
+                            <li><a href="LUGARES-TURISTICOS.html">Zoologico Zacango</a></li>
+                        </ul>
+                    </li>
+                    <li class="item"><a href="EVENTOS.html">Eventos</a></li>
+                    <li class="item"><a href="HISTORIA.html">Historia</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="container-all">
-            <input type="radio" id="1" name="image-slide" hidden/>
-            <input type="radio" id="2" name="image-slide" hidden/>
-            <input type="radio" id="3" name="image-slide" hidden/>
-            <input type="radio" id="4" name="image-slide" hidden/>
-            <input type="radio" id="5" name="image-slide" hidden/>
-            <div class="slide">
-                <div class="item-slide">
-                    <img class="imgs" src="IMAGENES/REYMA.jpg">
+        <div id="header">
+            <h2 class="text" id="subtitulo"><ins>Empresas más conocidas en el estado</ins></h2>
+        </div>
+        <div id="cajamadre">
+            <div class="fila">
+                <div class="sectionfila" id="section1">
+                    <div class="cuadro">
+                        <img src="IMAGENES/Empresa1.png" style="width: 100%; height:100%;">
+                    </div>
+                    <div class="bxinfo">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ipsum augue, maximus quis elementum in, iaculis eu erat. Aenean dictum quam sed mattis luctus. </p>
+                    </div>
                 </div>
-                <div class="item-slide">
-                    <img class="imgs" src="IMAGENES/BDT1.png">
+                <div class="sectionfila">
+                    <div class="cuadro">
+                        <img src="IMAGENES/Empresa2.png" style="width: 100%; height: 100%;">
+                    </div>
+                    <div class="bxinfo">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ipsum augue, maximus quis elementum in, iaculis eu erat. Aenean dictum quam sed mattis luctus. </p>
+                    </div>
                 </div>
-                <div class="item-slide">
-                    <img class="imgs" src="IMAGENES/BDT2.png">
-                </div>
-                <div class="item-slide">
-                    <img class="imgs" src="IMAGENES/BDT3.png">
-                </div>
-                <div class="item-slide">
-                    <img class="imgs" src="IMAGENES/BDT4.png">
+                <div class="sectionfila">
+                    <div class="cuadro">
+                        <img src="IMAGENES/Empresa3.png" style="width: 100%; height: 100%;">
+                    </div>
+                    <div class="bxinfo">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ipsum augue, maximus quis elementum in, iaculis eu erat. Aenean dictum quam sed mattis luctus. </p>
+                    </div>
                 </div>
             </div>
-            <div class="pagination">
-                <label class="pagination-item" id="pibt" for="1">
-                    <img src="IMAGENES/REYMA.jpg">
-                </label>
-                <label class="pagination-item" id="pibt" for="2">
-                    <img src="IMAGENES/BDT1.png">
-                </label>
-                <label class="pagination-item" id="pibt" for="3">
-                    <img src="IMAGENES/BDT2.png">
-                </label>
-                <label class="pagination-item" id="pibt" for="4">
-                    <img src="IMAGENES/BDT3.png">
-                </label>
-                <label class="pagination-item" id="pibt" for="5">
-                    <img src="IMAGENES/BDT4.png">
-                </label>
+            <div class="fila">
+                <div class="sectionfila">
+                    <div class="cuadro">
+                        <img src="IMAGENES/Empresa4.png" style="width: 100%; height: 100%;">
+                    </div>
+                     <div class="bxinfo">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ipsum augue, maximus quis elementum in, iaculis eu erat. Aenean dictum quam sed mattis luctus. </p>
+                    </div>
+                </div>
+                <div class="sectionfila">
+                    <div class="cuadro">
+                        <img src="IMAGENES/Empresa5.jpg" style="width: 100%; height: 100%;">
+                    </div>
+                     <div class="bxinfo">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ipsum augue, maximus quis elementum in, iaculis eu erat. Aenean dictum quam sed mattis luctus. </p>
+                    </div>
+                </div>
+                <div class="sectionfila">
+                    <div class="cuadro">
+                        <img src="IMAGENES/Empresa6.jpg" style="width: 100%; height: 100%;">
+                    </div>
+                     <div class="bxinfo">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ipsum augue, maximus quis elementum in, iaculis eu erat. Aenean dictum quam sed mattis luctus. </p>
+                    </div>
+                </div>
             </div>
         </div>
         <footer>
@@ -88,7 +112,7 @@
                 <input type="email" name="" id="footerinpEmail"></p>
 
                 <p><label>Dudas o sugerencias</label></p>
-                <textarea rows="10" cols="50" id="footerdoubts"></textarea><br>
+                <textarea rows="5" cols="50" id="footerdoubts"></textarea><br>
 
                 <input type="button" onclick="objcontacto()" value="Enviar" id="buttonContact">
             </form>

@@ -11,31 +11,30 @@ body{
 	position: absolute;
 	position: fixed;
 	width: 100%;
-	height: 14%;
+	height: 15.5%;
 }
 #menu{
 	position: relative;
 	border: 0px;
-	top:15%;
-	left: 20%;
+	top: 25%;
+	left: 19%;
 	list-style: none;
 	text-align: center;
 }
 #menu li{
 	width: 15%;
 	height: 30px;
-	border-left: 1px solid black;
 }
 #menu li a{
 	position: relative;
 	height: 100%;
-	background-color: #00000070;
+	background-color: #00000000;
 	text-decoration: none;
 	color:white;
 	display:block;
 }
 #menu li:hover{
-	background-color: #858585;
+	background-color: #4a4a4a;
 }
 #menu > li{
 	float: left;
@@ -50,8 +49,11 @@ body{
 #menu li ul li{
 	list-style: none;
 	position: relative;
-	right: 119%;
-	width: 173.5%;
+	right: 110.6%;
+	width: 157.8%;
+}
+.txts{
+	padding-top: 5px;
 }
 #divLogin{
 	border: 2px solid black;
@@ -87,7 +89,7 @@ body{
 	height: 35px;
 	border-radius: 0px 10px 10px 0px;
 }
-#divLogin .button:hover{
+#divLogin:hover{
 	background: #6A5ACD;
 	color:white;
 }
@@ -237,10 +239,10 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 	text-align:center;
 	}
 #conmas{
-	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0);
 	position: absolute;
 	display: inline-block;
-	margin-top: 63%;
+	margin-top: 66%;
 	margin-left: 40%;
 	font-size: 50px;
 }
@@ -254,26 +256,24 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 	box-shadow: 5px 5px 5px 5px white;
 	margin-right: 10px;
 	margin-left: 3%;
+	margin-top: 76%;
 	height: 100%; 
 	width: 28.7%; 
 	display:inline-block
 	}
 #divcon1{
 	position: absolute;
-	margin-top: 73%;
 	display:inline-block;
 	height: 55%;
 }
 #divcon2{
 	position: absolute;
-	margin-top: 73%;
 	margin-left: 35.5%;
 	display:inline-block;
 	height: 55%;
 }
 #divcon3{
 	position: absolute;
-	margin-top: 73%;
 	margin-left: 68%;
 	display:inline-block;
 	height: 55%;
@@ -282,28 +282,22 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 	width: 100%;
 	height: 80%;
 }
-#imgsmn1{
-	margin-top: 5px;
-}
-#imgsmn3{
-	margin-top: 5px;
-}
 #divcon01{
 	position: absolute;
-	margin-top: 33%;
+	margin-top: 36%;
 	display:inline-block;
 	height: 55%;
 }
 #divcon02{
 	position: absolute;
-	margin-top: 33%;
+	margin-top: 36%;
 	margin-left: 35.5%;
 	display:inline-block;
 	height: 55%;
 }
 #divcon03{
 	position: absolute;
-	margin-top: 33%;
+	margin-top: 36%;
 	margin-left: 68%;
 	display:inline-block;
 	height: 55%;
@@ -311,10 +305,22 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 #footer{
 	background:  rgb(38, 36, 61);
 	position: absolute;
-	margin-top: 103%;
+	margin-top: 110%;
 	width: 100%;
-	height: 39%;
+	height: 43%;
 	display: flex;
+}
+#bximgestadof{
+	width: 195px;
+	height: 195px;
+	position: absolute;
+	margin-left: 63%;
+	margin-top: 1%;
+}
+#bxcopy{
+	position: absolute;
+	margin-left: 52%;
+	margin-top: 17.3%;
 }
 #contfooter{
 	color: white;

@@ -1,16 +1,9 @@
 body{
 	background-color: whitesmoke;
 }
-#titulo{
-	background-color: rgb(38, 36, 61);
-	text-align: center;
-	color:white;
-	width: 50%;
-	margin:auto;
-}
 #divNavBar{
-	padding: 0px 15%;
-	margin-left: 6%; 
+	padding: 0px 0%;
+	margin-left: 12%; 
 }
 #menu{
 	padding: 0px 10%;
@@ -101,38 +94,46 @@ body{
 	position: inherit;
 	width: 70%;
 }
-#header{
+.text{
+	text-align:center;
+}
+.cleaner{
 	clear: both;
-	padding: 15px;
 }
 #subtitulo{
+	background-image: url("Lava.gif");
+	background-size:cover;
+	border:2px solid red;
 	text-align: center;
 	width: 100%;
-	margin-top: 55px;
+	margin-top:50px;
 	height: 50px;
-	color: #32CD32;
+	color: #FAFAD2;
+	display: flex;
+	align-items: center;
 	top:10px;
+	justify-content: center;
 	padding: 0px;
-	display: block;
 }
 #cajamadre{
 	margin-top: 10px;
 	border:2px solid black;
 	padding: 2% 0%;
-	background-color: #00CED1;
+	background-color: #3CB371;
 }
 .fila{
-	padding:2% 3%;
-	height:52%;
+	padding:2% 5%;
+	height:55%;
 }
 .sectionfila{
-	background-color: #228B22;
+	border-radius: 20px;
+	background-color: #8B0000;
 	position: inherit;
 	margin-top: 0px;
-	padding: 0.5%;
+	padding: 1% 1%;
 	width: 26%;
 	height: 100%;
-	margin-left: 3%;
+	margin-left: 3.6%;
 	display: inline-block;
 }
 .cuadro{
@@ -140,20 +141,16 @@ body{
 	height: 60%;
 }
 .bxinfo{
-	margin-top:; 
+	margin-top:0px; 
 	background-color: #F5F5F5;
-	width: 96.8%;
+	width: 96.5%;
 	height: 35%;
 	text-align: justify;
+	padding:5px;
 	font-size: 1.2vw;
-	padding:1.6%;
 }
-.sectionfila:hover{
-	position: relative;
-	width: 25.3%;
-	height: 99.3%;
-	border:2px solid #FF00FF;
-	transition-duration: 1s;
+.sectionfila:hover img{
+	transform: scale(1.2);
 }
 #bxbh{
 	position: absolute;
@@ -170,7 +167,53 @@ img{
 	height: 400px;
 	width: 600px;
 }
-/*
+.container-all{
+	position: relative;
+	margin-top: 2%;
+	margin-left: 2%;
+	height: 65%;
+	width: 45%;
+	border-radius: 6px;
+	overflow: hidden;
+}
+.slide{
+	display: flex;
+	transform: translate3d(0, 0, 0);
+	transition: all 600ms;
+	animation-name: autoplay;
+	animation-duration: 20s;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+}
+.item-slide{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	flex-grow: 0;
+	width: 100%;
+	height: 100%;
+}
+@keyframes autoplay{
+	20%{
+		transform: translate3d(calc(-100% * 0), 0, 0);
+	}
+	
+	40%{
+		transform: translate3d(calc(-100% * 1), 0, 0);
+	}
+	
+	60%{
+		transform: translate3d(calc(-100% * 2), 0, 0);
+	}
+	80%{
+		transform: translate3d(calc(-100% * 3), 0, 0);
+	}
+	100%{
+		transform: translate3d(calc(-100% * 4), 0, 0);
+	}
+}
 #bxinfo{
 	position: absolute;
 	margin-left: 47%;
@@ -179,18 +222,18 @@ img{
 	border-bottom: 2.5px solid rgb(180, 43, 43);
 	background-color: whitesmoke;
 	font-family: 'Franklin Gothic Medium';
-}*/
+}
 footer{
-	background: #87CEFA;
+	background: #008000;
 	color: white;
 	padding: 5px 10px;
 	margin-top: 5%;
 }
 #buttonContact{
+	margin-top: 10px;
 	background-color: lightblue;
 	font-weight: bold;
 	color:navy;
-	margin-top: 10px;
 }
 #buttonContact:hover{
 	background-color: yellow;

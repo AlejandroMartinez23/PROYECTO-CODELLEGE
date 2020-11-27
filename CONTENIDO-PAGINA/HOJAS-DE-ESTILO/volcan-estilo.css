@@ -116,41 +116,46 @@ body{
 	padding: 0px;
 }
 #cajamadre{
-	margin-top: 10px;
-	border:2px solid black;
-	padding: 2% 0%;
-	background-color: #3CB371;
+	padding: 0% 0%;
+	border:2px hidden red;
+	height: 800px;
+	background-color: none;
 }
 .fila{
-	padding:2% 5%;
-	height:55%;
+	border:2px hidden yellow;
+	display: flex;
+	padding:10px 5%;
+	height: 376px;
 }
 .sectionfila{
 	border-radius: 20px;
-	background-color: #8B0000;
-	position: inherit;
-	margin-top: 0px;
-	padding: 1% 1%;
+	background-color: #800000;
+	border:2px solid #800000;
+	padding: 10px 1%;
+	height: 356px;
 	width: 26%;
-	height: 100%;
 	margin-left: 3.6%;
-	display: inline-block;
 }
 .cuadro{
-	width: 100%;
+	border:2px hidden brown;
 	height: 60%;
 }
 .bxinfo{
-	margin-top:0px; 
-	background-color: #F5F5F5;
-	width: 96.5%;
+	margin-top:0px;
+	background-color: white;
 	height: 35%;
 	text-align: justify;
 	padding:5px;
 	font-size: 1.2vw;
+	border:2px hidden orange;
 }
 .sectionfila:hover img{
 	transform: scale(1.2);
+}
+.cuadro img{
+	border:;
+	width: 100%;
+	height: 100%;
 }
 #bxbh{
 	position: absolute;

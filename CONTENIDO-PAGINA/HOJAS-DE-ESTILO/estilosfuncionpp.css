@@ -44,7 +44,7 @@
 #pUsuarioF{
 	display:inline-block;
 	padding: 5px 20%;
-	border: 2px solid darkblue;
+	border: 2px hidden darkblue;
 	width:25%;
 	text-align: center;
 }

@@ -118,12 +118,13 @@ body{
 #cajamadre{
 	margin-top: 10px;
 	border:2px solid black;
-	padding: 2% 0%;
+	padding: 0% 0%;
 	background-color: #00CED1;
+	height: 700px;
 }
 .fila{
-	padding:2% 3%;
-	height:52%;
+	padding:20px 3%;
+	height:300px;
 }
 .sectionfila{
 	background-color: #228B22;
@@ -171,16 +172,6 @@ img{
 	height: 400px;
 	width: 600px;
 }
-/*
-#bxinfo{
-	position: absolute;
-	margin-left: 47%;
-	margin-right: 25px;
-	margin-top: 12px;
-	border-bottom: 2.5px solid rgb(180, 43, 43);
-	background-color: whitesmoke;
-	font-family: 'Franklin Gothic Medium';
-}*/
 footer{
 	background: #87CEFA;
 	color: white;

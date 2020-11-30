@@ -351,9 +351,10 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 #bxcopy{
 	position: absolute;
 	width: auto;
-	margin-left: 55%;
+	margin-left: 53%;
 	margin-top: 17.3%;
 	font-size: 1.3vw;
+	color: white;
 	/*position: absolute;
 	margin-left: 52%;
 	margin-top: 17.3%;*/

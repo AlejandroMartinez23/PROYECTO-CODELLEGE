@@ -14,6 +14,7 @@ body{
 	z-index: 1;
 }
 #divNavBar{
+	border: 0px;
 	padding: 0px 0%;
 	margin-top: 45px;
 }
@@ -38,6 +39,10 @@ body{
 	width: 25%;
 	position: relative;
 }
+#menu #submenu1{
+	background-color: rgba(255, 255, 255, 0);
+	margin-left: -3%;
+} 
 #menu .item a{
 	color: white;
 	text-align: center;
@@ -46,7 +51,7 @@ body{
 	padding: 10px 20px;
 	height: 12px;
 	font-size: 1.3vw;
-	font-family: rubik one;
+	font-family: Arial;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -55,6 +60,15 @@ body{
 	position: absolute;
 	width: 100%;
 	padding:0px;
+}
+#menu .item ul a{
+	display: inline-block;
+	height: 20px;
+	background-color: rgb(38, 36, 61);
+	border: 0px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 15px;
 }
 #menu #submenu1{
 	display: none;

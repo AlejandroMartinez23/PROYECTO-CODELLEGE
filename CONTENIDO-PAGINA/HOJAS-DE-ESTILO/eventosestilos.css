@@ -10,7 +10,7 @@ body{
 }
 #divNavBar{
 	padding: 0px 0%;
-	margin-top: 5px;
+	margin-top: 30px;
 }
 #menu{
 	position: relative;
@@ -19,11 +19,11 @@ body{
 }
 #menu > ul{
 	list-style: none;
-	width: 70%;
+	width: 60%;
 	padding: 0px;
 	margin:0;
 	position: absolute;
-	margin-left: 18%;
+	margin-left: 23%;
 }
 #menu ul{
 	list-style: none;
@@ -33,16 +33,18 @@ body{
 	width: 30%;
 	position: relative;
 }
+#menu #submenu1{
+	background-color: rgba(255, 255, 255, 0);
+} 
 #menu .item a{
-	color: white;
 	text-align: center;
 	background-color: none;
-	color:purple;
 	text-decoration:none;
 	padding: 10px 20px;
 	height: 12px;
+	color:purple;
 	font-size: 1.5vw;
-	font-family: rubik one;
+	font-family: Arial;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -52,18 +54,25 @@ body{
 	width: 100%;
 	padding:0px;
 }
+#menu .item ul a{
+	display: inline-block;
+	height: 20px;
+	border: 0px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 1.2vw;
+}
 #menu #submenu1{
 	display: none;
 	padding-left: 0px;
 }
 #menu .item ul li a{
-	padding-top: 5%;
-	padding-bottom: 5%;
+	height: 15px;
 	width: auto;
 	display: flex;
-	font-size: 1.2vw;
 	position:inherit;
 	text-align: center;
+	font-size: 1.2vw;
 }
 #menu .item a:hover{
 	background-color: #FAEBD7;
@@ -121,10 +130,9 @@ body{
 	clear: both;
 }
 #subtitulo{
-	border:;
 	text-align: center;
 	width: 100%;
-	margin-top: 115px;
+	margin-top: 140px;
 	margin-bottom: 5px;
 	height: 50px;
 	color: #00BFFF;
@@ -145,19 +153,17 @@ img{
 	max-width: 100%;
 }
 .imgs{
-	height: 400px;
-	width: 600px;
+	height: 30%;
+	width: 2000px;
 }
 hr{
 	border:2px solid red;
 	margin-top: 17px;
 }
 .cajamadre{
-	border:;
 	padding: 2%;
 }
 .filacm{
-	border:;
 	display: flex;
 	align-items: center;
 }
@@ -170,78 +176,71 @@ hr{
 #bxinfo1{
 	padding:2px 1% 2px 1%;
 	width: 90%;
-	border:;
 	display: inline-block;
 	position:relative;
 	text-align: justify;
 	height: auto;
 	margin-left:5%;
-	margin-right:;
 	background-color: whitesmoke;
 	font-family: 'Franklin Gothic Medium';
-}
-.container-all{
-	display: inline-block;
-	position: relative;
-	margin-left:5%;
-	height: 200px;
-	width: 100%;
-	border-radius: 6px;
-	overflow: hidden;
-}
-.slide{
-	display: flex;
-	transform: translate3d(0, 0, 0);
-	transition: all 600ms;
-	animation-name: autoplay;
-	animation-duration: 20s;
-	animation-direction: alternate;
-	animation-fill-mode: forwards;
-	animation-iteration-count: infinite;
-}
-.item-slide{
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	flex-shrink: 0;
-	flex-grow: 0;
-	width: 100%;
-	height: 100%;
-}
-@keyframes autoplay{
-	20%{
-		transform: translate3d(calc(-100% * 0), 0, 0);
-	}
-	
-	40%{
-		transform: translate3d(calc(-100% * 1), 0, 0);
-	}
-	
-	60%{
-		transform: translate3d(calc(-100% * 2), 0, 0);
-	}
-	80%{
-		transform: translate3d(calc(-100% * 3), 0, 0);
-	}
-	100%{
-		transform: translate3d(calc(-100% * 4), 0, 0);
-	}
 }
 .subtitulo2{
 	margin-top: 5px;
 	margin-bottom: 5px;
-	border:;
 	text-align: center;
 	color:#00BFFF;
 }
-footer{
-	background: #3286ec;
+#footer{
+	background:  rgb(38, 36, 61);
+	position: relative;
+	margin-top:0;
+	width: 100%;
+	height: 325px;
+	display: flex;
+}
+#bximgestadof{
+	width: 25%;
+	height: auto;
+	position: absolute;
+	margin-left: 63%;
+	margin-top: 1%;
+}
+#bxcopy{
+	position: absolute;
+	width: auto;
+	margin-left: 55%;
+	margin-top: 17.3%;
+	font-size: 1.3vw;
+}
+#contfooter{
 	color: white;
-	padding: 5px 10px;
-	margin-top: 5%;
+	width: 30%;
+	background-color: rgb(38, 36, 61);
+	box-shadow: 5px 5px 5px 5px rgba(38, 36, 61, 0.623);
+	display: inline-block;
+	position: relative;
+	margin-top: 40px;
+	margin-left: 5%;
+	padding-left: 2px;
+}
+#confooter input{
+	width: 20%;
+}
+#contfooter #footerdoubts{
+	width: 90%;
+}
+#bxcont{
+	color: white;
+	position: absolute;
+	display: inline-block;
+	font-size: 25px;
+	margin-left: 5%;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	border: 0px;
+	height:50px;
 }
 #buttonContact{
-	margin-top: 10px;
 	background-color: lightblue;
 	font-weight: bold;
 	color:navy;

@@ -9,6 +9,7 @@ body{
 	font-size: 2.3vw;
 }
 #divNavBar{
+	border: 0px;
 	padding: 0px 0%;
 	margin-top: 5px;
 }
@@ -33,8 +34,10 @@ body{
 	width: 25%;
 	position: relative;
 }
+#menu #submenu1{
+	margin-left: -3%;
+} 
 #menu .item a{
-	color: white;
 	text-align: center;
 	background-color: none;
 	color:purple;
@@ -42,7 +45,8 @@ body{
 	padding: 10px 20px;
 	height: 12px;
 	font-size: 1.5vw;
-	font-family: rubik one;
+	font-family: Arial;
+	color:purple;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -51,6 +55,14 @@ body{
 	position: absolute;
 	width: 100%;
 	padding:0px;
+}
+#menu .item ul a{
+	display: inline-block;
+	height: 20px;
+	border: 0px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 1.2vw;
 }
 #menu #submenu1{
 	display: none;
@@ -170,7 +182,7 @@ body{
 	transform: scale(1.2);
 }
 .cuadro img{
-	border:;
+	border: 0px;
 	width: 100%;
 	height: 100%;
 }
@@ -313,7 +325,7 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 	}
 }
 #bxinfo{
-	position: absolute;
+	position: relative;
 	margin-left: 47%;
 	margin-right: 25px;
 	margin-top: 12px;
@@ -321,14 +333,69 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 	background-color: whitesmoke;
 	font-family: 'Franklin Gothic Medium';
 }
-footer{
-	background: #556B2F;
+#footer{
+	background:  rgb(38, 36, 61);
+	position: relative;
+	margin-top:0;
+	width: 100%;
+	height: 325px;
+	display: flex;
+}
+#bximgestadof{
+	width: 25%;
+	height: auto;
+	position: absolute;
+	margin-left: 63%;
+	margin-top: 1%;
+}
+#bxcopy{
+	position: absolute;
+	width: auto;
+	margin-left: 55%;
+	margin-top: 17.3%;
+	font-size: 1.3vw;
+	/*position: absolute;
+	margin-left: 52%;
+	margin-top: 17.3%;*/
+}
+#contfooter{
 	color: white;
-	padding: 5px 10px;
-	margin-top: 5%;
+	width: 30%;
+	background-color: rgb(38, 36, 61);
+	box-shadow: 5px 5px 5px 5px rgba(38, 36, 61, 0.623);
+	display: inline-block;
+	position: relative;
+	margin-top: 40px;
+	margin-left: 5%;
+	padding-left: 2px;
+	/*color: white;
+	border: 0px;
+	background-color: rgb(38, 36, 61);
+	box-shadow: 5px 5px 5px 5px rgba(38, 36, 61, 0.623);
+	display: inline-block;
+	position: relative;
+	margin-top: 40px;
+	margin-left: 5%;
+	padding-left: 2px;*/
+}
+#confooter input{
+	width: 20%;
+}
+#contfooter #footerdoubts{
+	width: 90%;
+}
+#bxcont{
+	color: white;
+	position: absolute;
+	display: inline-block;
+	font-size: 25px;
+	margin-left: 5%;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	border: 0px;
+	height:50px;
 }
 #buttonContact{
-	margin-top: 10px;
 	background-color: lightblue;
 	font-weight: bold;
 	color:navy;

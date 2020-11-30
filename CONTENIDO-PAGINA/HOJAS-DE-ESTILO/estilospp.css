@@ -14,7 +14,7 @@ body{
 	height: 100px;
 }
 #divNavBar{
-	border:;
+	border: 0px;
 	padding: 0px 0%;
 	margin-top: 35px;
 	margin-right: 0%; 
@@ -34,7 +34,7 @@ body{
 	float: left;
 }
 #menu #submenu1{
-	background-color:;
+	background-color: rgba(255, 255, 255, 0);
 	margin-left: -3%;
 } 
 #menu .item a{
@@ -46,7 +46,7 @@ body{
 	width: 140px;
 	height: 12px;
 	font-size: 18px;
-	font-family: rubik one;
+	font-family: Arial;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -55,7 +55,7 @@ body{
 	display: inline-block;
 	height: 20px;
 	background-color: rgb(38, 36, 61);
-	border: ;
+	border: 0px;
 	padding-top: 10px;
 	padding-bottom: 5px;
 	font-size: 15px;

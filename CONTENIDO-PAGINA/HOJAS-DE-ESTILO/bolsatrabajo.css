@@ -32,7 +32,7 @@ body{
 	height: 12px;
 	font-size: 18px;
 	color:purple;
-	font-family: rubik one;
+	font-family: Arial;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -40,8 +40,6 @@ body{
 #menu .item ul a{
 	display: inline-block;
 	height: 20px;
-	background-color:;
-	border: ;
 	padding-top: 10px;
 	padding-bottom: 5px;
 	font-size: 15px;
@@ -53,7 +51,6 @@ body{
 }
 #menu .item a:hover{
 	background-color: #FAEBD7;
-	display: ;
 }
 #menu .item:hover #submenu1{
 	display: block;
@@ -141,7 +138,6 @@ body{
 	height: 60%;
 }
 .bxinfo{
-	margin-top:; 
 	background-color: #F5F5F5;
 	width: 96.8%;
 	height: 35%;
@@ -172,17 +168,52 @@ img{
 	height: 400px;
 	width: 600px;
 }
-footer{
-	background: #87CEFA;
-	color: white;
-	padding: 5px 10px;
+#footer{
+	background:  rgb(38, 36, 61);
+	position: absolute;
 	margin-top: 5%;
+	width: 100%;
+	height: 290px;
+	display: flex;
+}
+#bximgestadof{
+	width: 195px;
+	height: 195px;
+	position: absolute;
+	margin-left: 63%;
+	margin-top: 1%;
+}
+#bxcopy{
+	position: absolute;
+	margin-left: 52%;
+	margin-top: 17.3%;
+}
+#contfooter{
+	color: white;
+	border: 0px;
+	background-color: rgb(38, 36, 61);
+	box-shadow: 5px 5px 5px 5px rgba(38, 36, 61, 0.623);
+	display: inline-block;
+	position: relative;
+	margin-top: 40px;
+	margin-left: 5%;
+	padding-left: 2px;
+}
+#bxcont{
+	color: white;
+	position: absolute;
+	display: inline-block;
+	font-size: 25px;
+	margin-left: 5%;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	border: 0px;
+	height:50px;
 }
 #buttonContact{
 	background-color: lightblue;
 	font-weight: bold;
 	color:navy;
-	margin-top: 10px;
 }
 #buttonContact:hover{
 	background-color: yellow;

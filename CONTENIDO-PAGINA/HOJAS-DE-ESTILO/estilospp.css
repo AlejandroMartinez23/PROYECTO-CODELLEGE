@@ -8,62 +8,67 @@ body{
 }
 #bxen{
 	background-color: rgb(38, 36, 61);
-	position: absolute;
 	position: fixed;
 	width: 100%;
 	height: 100px;
+	z-index: 1;
 }
 #divNavBar{
-	border:;
 	padding: 0px 0%;
-	margin-top: 35px;
-	margin-right: 0%; 
+	margin-top: 45px;
 }
 #menu{
+	position: relative;
 	padding: 0px 0%;
+	margin-left: 0;
+}
+#menu > ul{
+	list-style: none;
+	width: 60%;
+	padding: 0px;
+	margin:0;
+	position: absolute;
+	margin-left: 20%;
 }
 #menu ul{
 	list-style: none;
 }
-#menu > ul{
-	padding: 0px;
-	margin:0;
-	margin-left: 22%;
-}
 #menu .item{
 	float: left;
+	width: 25%;
+	position: relative;
 }
-#menu #submenu1{
-	background-color:;
-	margin-left: -3%;
-} 
 #menu .item a{
 	color: white;
 	text-align: center;
 	background-color: none;
 	text-decoration:none;
-	padding: 12px 20px;
-	width: 140px;
+	padding: 10px 20px;
 	height: 12px;
-	font-size: 18px;
+	font-size: 1.3vw;
 	font-family: rubik one;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-#menu .item ul a{
-	display: inline-block;
-	height: 20px;
-	background-color: rgb(38, 36, 61);
-	border: ;
-	padding-top: 10px;
-	padding-bottom: 5px;
-	font-size: 15px;
+#subitem{
+	position: absolute;
+	width: 100%;
+	padding:0px;
 }
 #menu #submenu1{
 	display: none;
-	position: absolute;
-	max-width: 10%;
+	padding-left: 0px;
+}
+#menu .item ul li a{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	width: auto;
+	display: flex;
+	position:inherit;
+	text-align: center;
+	background-color: rgb(38, 36, 61);
+	font-size: 1.3vw;
 }
 #menu .item a:hover{
 	background-color: #4a4a4a;
@@ -94,6 +99,11 @@ body{
 	border-radius: 50px;
 	color: white;   
 }
+@media only screen and (max-width: 800px) {
+	#divLogin{
+		width:10%;
+	}
+}
 #formLogin{
 	display:none;
 }
@@ -119,8 +129,8 @@ body{
 	margin-left: 5%;
 	position: absolute;
 	display: 0px;
-	width: 120px;
-	height: 102px;
+	width: 10%;
+	height: auto;
 }
 img{
 	max-width: 100%;
@@ -129,11 +139,14 @@ img{
 	height: 370px;
 	width: 100%;
 }
+#clear{
+	border:2px solid red;
+}
 .container-all{
 	overflow: hidden;
-	position: absolute;
+	position: relative;
 	border-radius: 6px;
-	margin-top: 5.8%;
+	margin-top:7%;
 	height: 390px;
 	width: 100%;
 }
@@ -250,99 +263,142 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 		transform: translate3d(calc(-100% * 4), 0, 0);
 	}
 }
+#divcons{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 450px;
+}
+#divcons .divcon{
+	width: 30%;
+	margin-left: 1%;
+	text-align: center;
+}
+#divcons .divcon p{
+	text-align: justify;
+	height: 15%;
+}
+#divcon01{
+	font-size: 1.5vw;
+	position: relative;
+	margin-top: 0;
+	display:inline-block;
+	height: 100%;
+}
+#divcon02{
+	font-size: 1.5vw;
+	position: relative;
+	margin-top: 0;
+	display:inline-block;
+	height: 100%;
+}
+#divcon03{
+	font-size: 1.5vw;
+	position: relative;
+	background-color: white;
+	position: relative; 
+	margin-top:0;
+	height: 100%; 
+	display:inline-block;
+}
+#divcon03 img{
+	height: cover;
+}
 .hipers{
 	color: black;
-	font-size:20px; 
+	font-size:1.5vw; 
 	font-family: fantasy;
 	text-align:center;
-	}
-#conmas{
-	background-color: rgba(255, 255, 255, 0);
-	position: absolute;
-	display: inline-block;
-	margin-top: 66%;
-	margin-left: 40%;
-	font-size: 50px;
-}
-#pconmas{
-	border-bottom: 2.5px solid rgb(180, 43, 43);
-	background-color: white;
-	font-family: 'Franklin Gothic Medium';
-}
-.divcon{
-	background-color: white; 
-	box-shadow: 5px 5px 5px 5px white;
-	margin-right: 10px;
-	margin-left: 3%;
-	margin-top: 76%;
-	height: 100%; 
-	width: 28.7%; 
-	display:inline-block
-	}
-#divcon1{
-	position: absolute;
-	display:inline-block;
-	height: 55%;
-}
-#divcon2{
-	position: absolute;
-	margin-left: 35.5%;
-	display:inline-block;
-	height: 55%;
-}
-#divcon3{
-	position: absolute;
-	margin-left: 68%;
-	display:inline-block;
-	height: 55%;
 }
 .imgsmn{
 	width: 100%;
-	height: 80%;
+	height: 64%;
 }
-#divcon01{
-	position: absolute;
-	margin-top: 36%;
-	display:inline-block;
-	height: 55%;
+#conmas{
+	background-color: rgba(255, 255, 255, 0);
+	position: relative;
+	justify-content: center;
+	margin:5% auto;
+	width: 30%;
+	display: block;
+	font-size: 2vw;
+	padding: 0px;
 }
-#divcon02{
-	position: absolute;
-	margin-top: 36%;
-	margin-left: 35.5%;
-	display:inline-block;
-	height: 55%;
+#pconmas{
+	position: relative;
+	border-bottom: 2.5px solid rgb(180, 43, 43);
+	text-align: center;
+	background-color: white;
+	font-family: 'Franklin Gothic Medium';
 }
-#divcon03{
-	position: absolute;
-	margin-top: 36%;
-	margin-left: 68%;
+#divcons2{
+	height: auto;
+	margin-bottom: 5%;
+	margin-top: 10%;
+	text-align: center;
+}
+#divcons2 .divcon{
+	width: 30%;
+	height: 100%;
+	margin-left: 1%;
+	font-size: 1.3vw;
+}
+#divcons2 .divcon a{
+	font-size: 1.5vw;
+	text-align: center;
+}
+#divcons2 .divcon iframe{
+	width: 100%;
+	/*height: auto;*/
+}
+#divcons2 .divcon p{
+	text-align: justify;
+}
+#divcon1{
+	position: relative;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
 	display:inline-block;
-	height: 55%;
+}
+#divcon2{
+	position: relative;
+	margin-top: 0px;
+	margin-left: 0px;
+	display:inline-block;
+}
+#divcon3{
+	position: relative;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	display:inline-block;
 }
 #footer{
 	background:  rgb(38, 36, 61);
-	position: absolute;
-	margin-top: 110%;
+	position: relative;
+	margin-top:0;
 	width: 100%;
-	height: 290px;
+	height: 325px;
 	display: flex;
 }
 #bximgestadof{
-	width: 195px;
-	height: 195px;
+	width: 25%;
+	height: auto;
 	position: absolute;
 	margin-left: 63%;
 	margin-top: 1%;
 }
 #bxcopy{
 	position: absolute;
-	margin-left: 52%;
+	width: auto;
+	margin-left: 55%;
 	margin-top: 17.3%;
+	font-size: 1.3vw;
 }
 #contfooter{
 	color: white;
-	border: 0px;
+	width: 30%;
 	background-color: rgb(38, 36, 61);
 	box-shadow: 5px 5px 5px 5px rgba(38, 36, 61, 0.623);
 	display: inline-block;
@@ -350,6 +406,12 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 	margin-top: 40px;
 	margin-left: 5%;
 	padding-left: 2px;
+}
+#confooter input{
+	width: 20%;
+}
+#contfooter #footerdoubts{
+	width: 90%;
 }
 #bxcont{
 	color: white;

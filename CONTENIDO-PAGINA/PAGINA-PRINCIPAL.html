@@ -10,6 +10,47 @@
 		<link rel="stylesheet" href="HOJAS-DE-ESTILO/estilosfuncionpp.css">
 	</head>
 	<body>
+		<div id="bxen">
+			<!--Login-->
+			<div id="divLogin">
+				<img src="IMAGENES/LoginImg.png" style="width:30px;height:auto" id="imgLogin" onclick="mostrar()">
+				<input type="button" value="Login" onclick="mostrar()" class="button" id="botonLogin"></input>
+				<form id="formLogin">
+					<p><label id="pUsuario" for="inputUsuario">Usuario</label></p>
+					<input type="text" id="inputUsuario" class="widthInputLog">
+	
+					<p><label id="pContrasena" for="inputContra">Password</label></p>
+					<input type="password" id="inputContra" class="widthInputLog">
+	
+					<p><input type="button" onclick="logearse()" value="Iniciar Sesion" id="BtnStartCloseSesion" class="button"></p>
+	
+					<input type="button" value="Ocultar" onclick="ocultar()" class="button"></input>
+				</form>
+			</div>
+			<div>
+					<img id="imgestado" src="IMAGENES/LOGO-GOBIERNO-ESTADO.png" alt="Escudo del estado de México">
+			</div>
+			<!--navbar-->
+			<div id="divNavBar">
+	            <div id="menu">
+	                <ul>
+	                    <li class="item"><a>Lugares Turisticos</a>
+	                    	<div id="subitem">
+		                        <ul id="submenu1">
+		                            <li><a href="LUGARES-TURISTICOS.html">Zoologico Zacango</a></li>
+		                            <li><a href="LUGARES-TURISTICOS2.html">Volcan Popocatepetl</a></li>
+		                        </ul>
+		                    </div>
+	                    </li>
+	                    <li class="item"><a href="EVENTOS.html">Eventos</a></li>
+	                    <li class="item"><a href="HISTORIA.html">Historia</a></li>
+	                    <li class="item"><a href="BOLSA-DE-TRABAJO.html">Bolsa de trabajo</a></li>
+	                </ul>
+	            </div>
+        	</div>
+		</div>
+		<div id="clear">
+		</div>
 		<div class="container-all">
 			<input type="radio" id="1" name="image-slide" hidden/>
 			<input type="radio" id="2" name="image-slide" hidden/>
@@ -51,105 +92,68 @@
 				</label>
 			</div>
 		</div>
-		<div class="divcon" id="divcon01">
-<center>
-			<a href="LUGARES-TURISTICOS.html" class="hipers">Cachorro de jaguar llega a zoológico de Ecatepec</a>
-</center>
-			<p>Aqui podras encontrar..."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."</p>
-			<img class="imgsmn" id="imgsmn1" src="IMAGENES/MINI-NOTICIA1.jpg" alt="Imagen de mini-noticia1">	
+		<div id="divcons">
+			<div class="divcon" id="divcon01">
+				<a href="LUGARES-TURISTICOS.html" class="hipers">Cachorro de jaguar llega a zoológico de Ecatepec</a>
+				<p>Aqui podras encontrar..."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."</p>
+				<img class="imgsmn" id="imgsmn1" src="IMAGENES/MINI-NOTICIA1.jpg" alt="Imagen de mini-noticia1">	
+			</div>
+			<div class="divcon" id="divcon02">
+				<a href="LUGARES-TURISTICOS.html" class="hipers"> A fin de evitar contagios llevan a cabo Feria Virtual de la Piñata </a>
+				<p>Aqui podras encontrar..."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."</p>
+				<img class="imgsmn" id="imgsmn2" src="IMAGENES/MINI-NOTICIA2.jpg" alt="Imagen de mini-noticia2">	
+			</div>
+			<div class="divcon" id="divcon03">
+				<a href="LUGARES-TURISTICOS.html" class="hipers"> Convierten alcantarillas de Ecatepec en arte urbano </a>
+				<p>Aqui podras encontrar..."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."</p>
+				<img class="imgsmn" id="imgsmn3" src="IMAGENES/MINI-NOTICIA3.jpg" alt="Imagen de mini-noticia3">	
+			</div>
 		</div>
-		<div class="divcon" id="divcon02">
-<center>
-			<a href="LUGARES-TURISTICOS.html" class="hipers"> A fin de evitar contagios llevan a cabo Feria Virtual de la Piñata </a>
-</center>
-			<p>Aqui podras encontrar..."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."</p>
-			<img class="imgsmn" id="imgsmn2" src="IMAGENES/MINI-NOTICIA2.jpg" alt="Imagen de mini-noticia2">	
-		</div>
-		<div class="divcon" id="divcon03">
-<center>
-			<a href="LUGARES-TURISTICOS.html" class="hipers"> Convierten alcantarillas de Ecatepec en arte urbano </a>
-</center>
-			<p>Aqui podras encontrar..."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."</p>
-			<img class="imgsmn" id="imgsmn3" src="IMAGENES/MINI-NOTICIA3.jpg" alt="Imagen de mini-noticia3">	
-		</div>
+
 		<div id="conmas">
 			<p id="pconmas">Conocer más</p>
 		</div>
-		<div class="divcon" id="divcon1">
-<center>
-				<a href="LUGARES-TURISTICOS.html" class="hipers"> Zoologico de zacango </a>
-</center>
-				<p>Aqui podras encontrar..."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
-				<iframe 
-					width="390" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=439&amp;height=240&amp;hl=en&amp;q=zoologico%20de%20zacango%20+(ZOOLOGICO)&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-				</iframe>
-				<a href='https://www.symptoma.es/es/info/covid-19'>
-					test coronavirus
-				</a> 
-				<script 
-					type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=7de4978c3feaab2f47a92189437603f71c83f825'>
-				</script>
-		</div>
-		<div class="divcon" id="divcon2">
-<center>
-				<a href="LUGARES-TURISTICOS2.html" class="hipers"> Volcan popocatepetl </a>
-</center>
-				<p>Aqui podras encontrar..."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
-				<iframe 
-					width="390" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=439&amp;height=240&amp;hl=en&amp;q=volcan%20popocatepetl%20+(VOLCAN)&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-				</iframe>
-				<script 
-					type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=ebe7f9fb55bb86c74d47d755977876373a384c7c'>
-				</script>
-		</div>
-		<div class="divcon" id="divcon3">
-<center>
-				<a href="EVENTOS.html" class="hipers"> Equinoccio 2021 </a>
-</center>
-				<p>Aqui podras encontrar..."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
-				<iframe
-					width="390" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=439&amp;height=240&amp;hl=en&amp;q=piramide%20del%20sol%20+(TEOTIHUACAN)&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-				</iframe>
-				<script 
-					type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=2dee056f690fe51821e2a8becfd7bb298fff7d79'>
-				</script>
-		</div>
-		<div id="bxen">
-			<!--Login-->
-			<div id="divLogin">
-				<img src="IMAGENES/LoginImg.png" style="width:30px;height:auto" id="imgLogin">
-				<input type="button" value="Login" onclick="mostrar()" class="button" id="botonLogin"></input>
-				<form id="formLogin">
-					<p><label id="pUsuario" for="inputUsuario">Usuario</label></p>
-					<input type="text" id="inputUsuario" class="widthInputLog">
-	
-					<p><label id="pContrasena" for="inputContra">Password</label></p>
-					<input type="password" id="inputContra" class="widthInputLog">
-	
-					<p><input type="button" onclick="logearse()" value="Iniciar Sesion" id="BtnStartCloseSesion" class="button"></p>
-	
-					<input type="button" value="Ocultar" onclick="ocultar()" class="button"></input>
-				</form>
+
+		<div id="divcons2">
+			<div class="divcon" id="divcon1">
+					<a href="LUGARES-TURISTICOS.html" class="hipers"> Zoologico de zacango </a>
+					<p>Aqui podras encontrar..."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
+					<iframe 
+						width="390" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=439&amp;height=240&amp;hl=en&amp;q=zoologico%20de%20zacango%20+(ZOOLOGICO)&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+					</iframe>
+					<a href='https://www.symptoma.es/es/info/covid-19'>
+						<span></span>
+					</a> 
+					<script 
+						type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=7de4978c3feaab2f47a92189437603f71c83f825'>
+					</script>
 			</div>
-			<div id="bxescudo">
-					<a href="PAGINA-PRINCIPAL.html" ><img id="imgestado" src="IMAGENES/LOGO-GOBIERNO-ESTADO.png" alt="Escudo del estado de México"></a> 
+			<div class="divcon" id="divcon2">
+					<a href="LUGARES-TURISTICOS2.html" class="hipers"> Volcan popocatepetl </a>
+					<p>Aqui podras encontrar..."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
+					<iframe 
+						width="390" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=439&amp;height=240&amp;hl=en&amp;q=volcan%20popocatepetl%20+(VOLCAN)&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+					</iframe>
+					<a href='https://www.symptoma.es/es/info/covid-19'>
+						<span></span>
+					</a>
+					<script 
+						type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=ebe7f9fb55bb86c74d47d755977876373a384c7c'>
+					</script>
 			</div>
-			<!--navbar-->
-			<div id="divNavBar">
-            <div id="menu">
-                <ul>
-                    <li class="item"><a>Lugares Turisticos</a>
-                        <ul id="submenu1">
-                            <li><a href="LUGARES-TURISTICOS.html">Zoologico Zacango</a></li>
-                            <li><a href="LUGARES-TURISTICOS2.html">Volcan Popocatepetl</a></li>
-                        </ul>
-                    </li>
-                    <li class="item"><a href="EVENTOS.html">Eventos</a></li>
-                    <li class="item"><a href="HISTORIA.html">Historia</a></li>
-                    <li class="item"><a href="BOLSA-DE-TRABAJO.html">Bolsa de trabajo</a></li>
-                </ul>
-            </div>
-        </div>
+			<div class="divcon" id="divcon3">
+					<a href="EVENTOS.html" class="hipers"> Equinoccio 2021 </a>
+					<p>Aqui podras encontrar..."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
+					<iframe
+						width="390" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=439&amp;height=240&amp;hl=en&amp;q=piramide%20del%20sol%20+(TEOTIHUACAN)&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+					</iframe>
+					<a href='https://www.symptoma.es/es/info/covid-19'>
+						<span></span>
+					</a>
+					<script 
+						type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=2dee056f690fe51821e2a8becfd7bb298fff7d79'>
+					</script>
+			</div>
 		</div>
 		<div id="footer">
 			<div id="contfooter">
@@ -157,7 +161,7 @@
 					<p><label>Nombre: </label>
 					<input type="text" id="footerinpNombre"></p>
 
-					<p><label>Correo: </label>
+					<p><label>Correo: </label>&nbsp;
 					<input type="email" name="" id="footerinpEmail"></p>
 
 					<p><label>Dudas o sugerencias</label></p>

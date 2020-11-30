@@ -1,52 +1,71 @@
 body{
 	background-color: whitesmoke;
+	margin:0;
+	padding:0;
+}
+#header{
+	width: 50%;
+	margin: 2% auto;
+	font-size: 2.3vw;
 }
 #divNavBar{
 	padding: 0px 0%;
-	margin-left: 12%; 
+	margin-top: 5px;
 }
 #menu{
-	padding: 0px 10%;
+	position: relative;
+	padding: 0px 0%;
+	margin-left: 0;
+}
+#menu > ul{
+	list-style: none;
+	width: 80%;
+	padding: 0px;
+	margin:0;
+	position: absolute;
+	margin-left: 10%;
 }
 #menu ul{
 	list-style: none;
-	padding: 0px;
-	margin:0;
 }
 #menu .item{
 	float: left;
+	width: 25%;
+	position: relative;
 }
 #menu .item a{
+	color: white;
 	text-align: center;
 	background-color: none;
-	text-decoration:none;
-	padding: 12px 20px;
-	width: 150px;
-	height: 12px;
-	font-size: 18px;
 	color:purple;
+	text-decoration:none;
+	padding: 10px 20px;
+	height: 12px;
+	font-size: 1.5vw;
 	font-family: rubik one;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-#menu .item ul a{
-	display: inline-block;
-	height: 20px;
-	background-color:;
-	border: ;
-	padding-top: 10px;
-	padding-bottom: 5px;
-	font-size: 15px;
+#subitem{
+	position: absolute;
+	width: 100%;
+	padding:0px;
 }
 #menu #submenu1{
 	display: none;
-	position: absolute;
-	max-width: 10%;
+	padding-left: 0px;
+}
+#menu .item ul li a{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	width: auto;
+	display: flex;
+	position:inherit;
+	text-align: center;
 }
 #menu .item a:hover{
 	background-color: #FAEBD7;
-	display: ;
 }
 #menu .item:hover #submenu1{
 	display: block;
@@ -106,7 +125,7 @@ body{
 	border:2px solid red;
 	text-align: center;
 	width: 100%;
-	margin-top:50px;
+	margin-top:80px;
 	height: 50px;
 	color: #FAFAD2;
 	display: flex;
@@ -163,7 +182,7 @@ body{
 	top:5px;
 }
 #bh{
-	width: 120px;
+	width: 10%;
 	height: auto;
 }
 img{
@@ -220,15 +239,6 @@ img{
 		transform: translate3d(calc(-100% * 4), 0, 0);
 	}
 }
-#bxinfo{
-	position: absolute;
-	margin-left: 47%;
-	margin-right: 25px;
-	margin-top: 12px;
-	border-bottom: 2.5px solid rgb(180, 43, 43);
-	background-color: whitesmoke;
-	font-family: 'Franklin Gothic Medium';
-}
 footer{
 	background: #008000;
 	color: white;
@@ -243,4 +253,9 @@ footer{
 }
 #buttonContact:hover{
 	background-color: yellow;
+}
+@media only screen and (max-width: 800px) {
+	#divLogin{
+		width:10%;
+	}
 }

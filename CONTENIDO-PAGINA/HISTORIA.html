@@ -11,7 +11,7 @@
     </head>
     <body>
         <div id="divLogin">
-			<img src="IMAGENES/LoginImg.png" style="width:30px;height:auto" id="imgLogin">
+			<img src="IMAGENES/LoginImg.png" style="width:30px;height:auto" id="imgLogin" onclick="mostrar()">
 			<input type="button" value="Login" onclick="mostrar()" class="button" id="botonLogin"></input>
 
 			<form id="formLogin">
@@ -27,19 +27,21 @@
 			</form>
 		</div>
         <div id="bxbh">
-            <a href="PAGINA-PRINCIPAL.html"><img id="bh" src="IMAGENES/LOGO-GOBIERNO-ESTADO1.png"></a>
+            <a href="PAGINA-PRINCIPAL.html" title="Ir a Inicio"><img id="bh" src="IMAGENES/LOGO-GOBIERNO-ESTADO1.png"></a>
         </div>
         <h1 class="text" id="header"> ¡Historia del Estado de mexico! </h1>
 <br>
         <!--navbar-->
-        <div id="divNavBar">
+       <div id="divNavBar">
             <div id="menu">
                 <ul>
                     <li class="item"><a>Lugares Turisticos</a>
-                        <ul id="submenu1">
-                            <li><a href="LUGARES-TURISTICOS2.html">Popocatepetl</a></li>
-                            <li><a href="LUGARES-TURISTICOS.html">Zoologico Zacango</a></li>
-                        </ul>
+                        <div id="subitem">
+                            <ul id="submenu1">
+                                <li><a href="LUGARES-TURISTICOS.html">Zoologico Zacango</a></li>
+                                <li><a href="LUGARES-TURISTICOS2.html">Volcan Popocatepetl</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="item"><a href="EVENTOS.html">Eventos</a></li>
                     <li class="item"><a href="BOLSA-DE-TRABAJO.html">Bolsa de trabajo</a></li>

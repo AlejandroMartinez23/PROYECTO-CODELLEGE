@@ -1,66 +1,73 @@
 body{
 	background-color: whitesmoke;
-	padding: 3px;
+	padding:0px;
+	margin: 0px;
 }
 #header{
-	margin-top: -70px;
+	width: 50%;
+	margin: 2% auto;
+	font-size: 2.3vw;
+	margin-top: -5%;
 }
 #divNavBar{
-	border:;
 	padding: 0px 0%;
-	margin-left: 0%; 
+	margin-top: 5px;
 }
 #menu{
-	border:;
-	margin-left: 10%;
+	position: relative;
 	padding: 0px 0%;
+	margin-left: 0;
+}
+#menu > ul{
+	list-style: none;
+	width: 70%;
+	padding: 0px;
+	margin:0;
+	position: absolute;
+	margin-left: 18%;
 }
 #menu ul{
 	list-style: none;
 }
-#menu > ul{
-	padding: 0px;
-	margin:0;
-	margin-left: 22%;
-}
 #menu .item{
 	float: left;
+	width: 30%;
+	position: relative;
 }
-#menu #submenu1{
-	background-color:;
-	margin-left: -3%;
-} 
 #menu .item a{
+	color: white;
 	text-align: center;
 	background-color: none;
-	text-decoration:none;
-	padding: 12px 20px;
-	width: 140px;
-	height: 12px;
-	font-size: 18px;
 	color:purple;
+	text-decoration:none;
+	padding: 10px 20px;
+	height: 12px;
+	font-size: 1.5vw;
 	font-family: rubik one;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-#menu .item ul a{
-	display: inline-block;
-	height: 20px;
-	background-color:;
-	border: ;
-	padding-top: 10px;
-	padding-bottom: 5px;
-	font-size: 15px;
+#subitem{
+	position: absolute;
+	width: 100%;
+	padding:0px;
 }
 #menu #submenu1{
 	display: none;
-	position: absolute;
-	max-width: 10%;
+	padding-left: 0px;
+}
+#menu .item ul li a{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	width: auto;
+	font-size: 1.2vw;
+	display: flex;
+	position:inherit;
+	text-align: center;
 }
 #menu .item a:hover{
 	background-color: #FAEBD7;
-	display: ;
 }
 #menu .item:hover #submenu1{
 	display: block;
@@ -122,9 +129,10 @@ body{
 	margin-left: 40%;
 }
 #subtitulo{
+	margin-top: 50px;
+	margin-bottom: 20px;
 	text-align: center;
 	width: 100%;
-	margin-top:;
 	height: 50px;
 	color: #800000;
 	top:10px;
@@ -138,7 +146,7 @@ body{
 	top:5px;
 }
 #bh{
-	width: 120px;
+	width: 10%;
 	height: auto;
 }
 img{
@@ -153,8 +161,7 @@ img{
 	background-color: #D2B48C;
 	border:;
 	display: flex;
-	width: 95%;
-	margin: auto 2% auto 2%;
+	width: 100%;
 	align-items: center;
 	text-align: justify;
 }
@@ -204,15 +211,17 @@ img{
 /**/
 #cajamadre2{
 	background-color:#D2B48C;
+	box-sizing: border-box;
 	padding: 5px 1% 5px 1%;
 	display: flex;
 	align-items: center;
 	border:;
-	margin: 10px 3px 10px 3px;
+	margin: 10px 0px 10px 0px;
 	height: 500px;
 }
 #cm2section1{
 	background-color: white;
+	border:2px solid black;
 	height: 98%;
 	width: 55%;
 	display: inline-block;
@@ -248,17 +257,16 @@ img{
 #cajamadre3{
 	background-color: #D2B48C;
 	padding: 50px;
-	border:;
-	margin: 10px 3px 10px 3px;
+	margin: 10px 0px 10px 0px;
 	height: 500px;
 }
 #subcaja{
 	border:2px solid black;
+	background-color: white;
 }
 #cm3section1{
 	background-color: white;
 	padding: 0px 15px;
-	margin-top: -17.5px;
 	border:;
 	height: 50%;
 	text-align: justify;
@@ -333,4 +341,13 @@ footer{
 }
 #buttonContact:hover{
 	background-color: yellow;
+}
+@media only screen and (max-width: 800px) {
+	#divLogin{
+		width:10%;
+	}
+	#subtitulo{
+		width: 120%;
+		font-size: 3.6vw
+	}
 }

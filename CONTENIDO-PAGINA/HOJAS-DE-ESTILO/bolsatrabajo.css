@@ -1,59 +1,74 @@
 body{
 	background-color: whitesmoke;
+	margin:0px;
+	padding: 0px;
 }
 #titulo{
 	background-color: rgb(38, 36, 61);
 	text-align: center;
+	margin: 3% auto;
 	color:white;
 	width: 50%;
-	margin:auto;
 }
 #divNavBar{
-	padding: 0px 15%;
-	margin-left: 6%; 
+	padding: 0px 0%;
+	margin-top: 5px;
 }
 #menu{
-	padding: 0px 10%;
+	position: relative;
+	padding: 0px 0%;
+	margin-left: 0;
+}
+#menu > ul{
+	list-style: none;
+	width: 70%;
+	padding: 0px;
+	margin:0;
+	position: absolute;
+	margin-left: 18%;
 }
 #menu ul{
 	list-style: none;
-	padding: 0px;
-	margin:0;
 }
 #menu .item{
 	float: left;
+	width: 30%;
+	position: relative;
 }
 #menu .item a{
+	color: white;
 	text-align: center;
 	background-color: none;
-	text-decoration:none;
-	padding: 12px 20px;
-	width: 150px;
-	height: 12px;
-	font-size: 18px;
 	color:purple;
+	text-decoration:none;
+	padding: 10px 20px;
+	height: 12px;
+	font-size: 1.5vw;
 	font-family: rubik one;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-#menu .item ul a{
-	display: inline-block;
-	height: 20px;
-	background-color:;
-	border: ;
-	padding-top: 10px;
-	padding-bottom: 5px;
-	font-size: 15px;
+#subitem{
+	position: absolute;
+	width: 100%;
+	padding:0px;
 }
 #menu #submenu1{
 	display: none;
-	position: absolute;
-	max-width: 10%;
+	padding-left: 0px;
+}
+#menu .item ul li a{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	width: auto;
+	display: flex;
+	font-size: 1.2vw;
+	position:inherit;
+	text-align: center;
 }
 #menu .item a:hover{
 	background-color: #FAEBD7;
-	display: ;
 }
 #menu .item:hover #submenu1{
 	display: block;
@@ -108,7 +123,7 @@ body{
 #subtitulo{
 	text-align: center;
 	width: 100%;
-	margin-top: 55px;
+	margin-top: 93px;
 	height: 50px;
 	color: #32CD32;
 	top:10px;
@@ -146,7 +161,7 @@ body{
 	width: 96.8%;
 	height: 35%;
 	text-align: justify;
-	font-size: 1.2vw;
+	font-size: 16px;
 	padding:1.6%;
 }
 .sectionfila:hover{
@@ -186,4 +201,12 @@ footer{
 }
 #buttonContact:hover{
 	background-color: yellow;
+}
+@media only screen and (max-width: 800px) {
+	#divLogin{
+		width:10%;
+	}
+	.bxinfo{
+		font-size: 12px;
+	}
 }

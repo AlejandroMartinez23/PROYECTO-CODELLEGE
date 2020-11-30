@@ -11,7 +11,7 @@
     </head>
     <body>
         <div id="divLogin">
-			<img src="IMAGENES/LoginImg.png" style="width:30px;height:auto" id="imgLogin">
+			<img src="IMAGENES/LoginImg.png" style="width:30px;height:auto" id="imgLogin" onclick="mostrar()">
 			<input type="button" value="Login" onclick="mostrar()" class="button" id="botonLogin"></input>
 
 			<form id="formLogin">
@@ -27,19 +27,21 @@
 			</form>
 		</div>
         <div id="bxbh">
-            <a href="PAGINA-PRINCIPAL.html"><img id="bh" src="IMAGENES/LOGO-GOBIERNO-ESTADO1.png"></a>
+            <a href="PAGINA-PRINCIPAL.html" title="Ir a Inicio"><img id="bh" src="IMAGENES/LOGO-GOBIERNO-ESTADO1.png"></a>
         </div>
-        <h1 class="text"> ¡Eventos en el Estado de mexico! </h1>
+        <h1 class="text" id="header"> ¡Eventos en el Estado de mexico! </h1>
 <br>
         <!--navbar-->
         <div id="divNavBar">
             <div id="menu">
                 <ul>
                     <li class="item"><a>Lugares Turisticos</a>
-                        <ul id="submenu1">
-                            <li><a href="LUGARES-TURISTICOS2.html">Popocatepetl</a></li>
-                            <li><a href="LUGARES-TURISTICOS.html">Zoologico Zacango</a></li>
-                        </ul>
+                        <div id="subitem">
+                            <ul id="submenu1">
+                                <li><a href="LUGARES-TURISTICOS.html">Zoologico Zacango</a></li>
+                                <li><a href="LUGARES-TURISTICOS2.html">Volcan Popocatepetl</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="item"><a href="HISTORIA.html">Historia</a></li>
                     <li class="item"><a href="BOLSA-DE-TRABAJO.html">Bolsa de trabajo</a></li>
@@ -51,24 +53,8 @@
         <h2 class="text" id="subtitulo"><ins>Equinoccio de primavera 2021</ins></h2>
         <div class="cajamadre">
             <div class="filacm">
-                <div class="container-all">
-                    <div class="slide">
-                        <div class="item-slide">
-                            <img class="imgs" src="IMAGENES/EQUINOCCIO.jpg">
-                        </div>
-                        <div class="item-slide">
-                            <img class="imgs" src="IMAGENES/EQUINOCCIO1.jpg">
-                        </div>
-                        <div class="item-slide">
-                            <img class="imgs" src="IMAGENES/EQUINOCCIO2.jpg">
-                        </div>
-                        <div class="item-slide">
-                            <img class="imgs" src="IMAGENES/EQUINOCCIO3.jpg">
-                        </div>
-                        <div class="item-slide">
-                            <img class="imgs" src="IMAGENES/EQUINOCCIO4.jpg">
-                        </div>
-                    </div>
+                <div class="cmimagen">
+                    <img src="IMAGENES/EQUINOCCIO.jpg">
                 </div>
                 <div>
                     <div id="bxinfo1">
@@ -82,24 +68,8 @@
         <h2 class="subtitulo2"><ins>Lorem Ipsum</ins></h2>
         <div class="cajamadre">
             <div class="filacm">
-                <div class="container-all">
-                    <div class="slide">
-                        <div class="item-slide">
-                            <img class="imgs" src="IMAGENES/EQUINOCCIO.jpg">
-                        </div>
-                        <div class="item-slide">
-                            <img class="imgs" src="IMAGENES/EQUINOCCIO1.jpg">
-                        </div>
-                        <div class="item-slide">
-                            <img class="imgs" src="IMAGENES/EQUINOCCIO2.jpg">
-                        </div>
-                        <div class="item-slide">
-                            <img class="imgs" src="IMAGENES/EQUINOCCIO3.jpg">
-                        </div>
-                        <div class="item-slide">
-                            <img class="imgs" src="IMAGENES/EQUINOCCIO4.jpg">
-                        </div>
-                    </div>
+                <div class="cmimagen">
+                    <img src="IMAGENES/EQUINOCCIO1.jpg">
                 </div>
                 <div>
                     <div id="bxinfo1">

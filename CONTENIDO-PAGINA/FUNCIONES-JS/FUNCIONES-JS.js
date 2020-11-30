@@ -79,14 +79,30 @@ function objcontacto() {
 	var dudas = document.getElementById('footerdoubts').value
 	var obj = {
 	}
-	
 	if(name=="" | email=="" | dudas==""){
 		alert("Uno de los campos está vacio")
 	} else{
+
+		if(!validarEmail(email)){
+			return
+		}
 		console.log(obj)
 		obj.name = name;
 		obj.email = email
 		obj.doubts = dudas
 		console.log(obj)
+
 	}
+}
+
+function validarEmail(valor){
+	campo = valor;
+        
+    emailCaracteres = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+    if (emailCaracteres.test(campo)) {
+      return true
+    } else {
+      alert("Ingrese un correo válido");
+      return false
+    }
 }

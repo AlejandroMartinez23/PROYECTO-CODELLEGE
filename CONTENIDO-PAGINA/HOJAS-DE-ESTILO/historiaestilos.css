@@ -162,10 +162,10 @@ img{
 	width: 100%;
 }
 #cajamadre1{
-	padding: 5px;
 	background-color: #D2B48C;
 	display: flex;
-	width: 100%;
+	width: 90%;
+	margin-left: 5%;
 	align-items: center;
 	text-align: justify;
 }
@@ -221,7 +221,9 @@ img{
 	align-items: center;
 	border:;
 	margin: 10px 0px 10px 0px;
+	margin-left: 5%;
 	height: 500px;
+	width: 90%;
 }
 #cm2section1{
 	background-color: white;

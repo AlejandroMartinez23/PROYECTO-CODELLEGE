@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<link rel="icon" type="image/png" href="IMAGENES/FAVICON.png">
+		<link rel="icon" type="image/png" href="IMAGENES/FAVICON.png"> <!-- Icono del pestaña de la pagina -->
 		<meta charset="utf-8">
 		<meta name="author" content="EQUIPO 2"/>
 		<meta name="description" content="pagina principal"/>
@@ -10,11 +10,13 @@
 		<link rel="stylesheet" href="HOJAS-DE-ESTILO/estilosfuncionpp.css">
 	</head>
 	<body>
+		<!-- Sección fija en parte superior de la página -->
 		<div id="bxen">
 			<!--Login-->
 			<div id="divLogin">
 				<img src="IMAGENES/LoginImg.png" style="width:30px;height:auto" id="imgLogin" onclick="mostrar()">
 				<input type="button" value="Login" onclick="mostrar()" class="button" id="botonLogin"></input>
+
 				<form id="formLogin">
 					<p><label id="pUsuario" for="inputUsuario">Usuario</label></p>
 					<input type="text" id="inputUsuario" class="widthInputLog">
@@ -26,11 +28,13 @@
 	
 					<input type="button" value="Ocultar" onclick="ocultar()" class="button"></input>
 				</form>
+
 			</div>
+			<!-- Logo de la pagina -->
 			<div>
-					<a href="PAGINA-PRINCIPAL.html"><img id="imgestado" src="IMAGENES/LOGO-GOBIERNO-ESTADO.png" alt="Escudo del estado de México"></a>
+					<a href="PAGINA-PRINCIPAL.html" title="Recargar pagina principal"><img id="imgestado" src="IMAGENES/LOGO-GOBIERNO-ESTADO.png" alt="Escudo del estado de México"></a>
 			</div>
-			<!--navbar-->
+			<!--Barra de navegación-->
 			<div id="divNavBar">
 	            <div id="menu">
 	                <ul>
@@ -49,8 +53,7 @@
 	            </div>
         	</div>
 		</div>
-		<div id="clear">
-		</div>
+		<!-- Carrusel -->
 		<div class="container-all">
 			<input type="radio" id="1" name="image-slide" hidden/>
 			<input type="radio" id="2" name="image-slide" hidden/>
@@ -74,6 +77,7 @@
 					<a href="BOLSA-DE-TRABAJO.html"><img class="imgs" src="IMAGENES/REYMA.jpg"></a>
 				</div>
 			</div>
+			<!-- Cuadros de navegación dentro de carrusel -->
 			<div class="pagination">
 				<label class="pagination-item" for="1">
 					<img src="IMAGENES/ZOOLOGICO.jpg">
@@ -92,70 +96,81 @@
 				</label>
 			</div>
 		</div>
+		<!-- Sección tres primeras noticias -->
 		<div id="divcons">
+
 			<div class="divcon" id="divcon01">
 				<a href="LUGARES-TURISTICOS.html" class="hipers">Cachorro de jaguar llega a zoológico de Ecatepec</a>
 				<p>Aqui podras encontrar..."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."</p>
 				<img class="imgsmn" id="imgsmn1" src="IMAGENES/MINI-NOTICIA1.jpg" alt="Imagen de mini-noticia1">	
 			</div>
+
 			<div class="divcon" id="divcon02">
 				<a href="LUGARES-TURISTICOS.html" class="hipers"> A fin de evitar contagios llevan a cabo Feria Virtual de la Piñata </a>
 				<p>Aqui podras encontrar..."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."</p>
 				<img class="imgsmn" id="imgsmn2" src="IMAGENES/MINI-NOTICIA2.jpg" alt="Imagen de mini-noticia2">	
 			</div>
+
 			<div class="divcon" id="divcon03">
 				<a href="LUGARES-TURISTICOS.html" class="hipers"> Convierten alcantarillas de Ecatepec en arte urbano </a>
 				<p>Aqui podras encontrar..."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."</p>
 				<img class="imgsmn" id="imgsmn3" src="IMAGENES/MINI-NOTICIA3.jpg" alt="Imagen de mini-noticia3">	
 			</div>
-		</div>
 
+		</div>
+		<!-- Div conocer mas -->
 		<div id="conmas">
 			<p id="pconmas">Conocer más</p>
 		</div>
-
+		<!-- Sección de mapas de google maps -->
 		<div id="divcons2">
+
 			<div class="divcon" id="divcon1">
 					<a href="LUGARES-TURISTICOS.html" class="hipers"> Zoologico de zacango </a>
 					<p>Aqui podras encontrar..."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
 					<iframe 
 						width="390" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=439&amp;height=240&amp;hl=en&amp;q=zoologico%20de%20zacango%20+(ZOOLOGICO)&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
 					</iframe>
-					<a href='https://www.symptoma.es/es/info/covid-19'>
-						<span></span>
+					<a href='https://www.symptoma.es/es/info/covid-19' class="tohide">
+						test coronavirus
 					</a> 
 					<script 
 						type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=7de4978c3feaab2f47a92189437603f71c83f825'>
 					</script>
 			</div>
+
 			<div class="divcon" id="divcon2">
 					<a href="LUGARES-TURISTICOS2.html" class="hipers"> Volcan popocatepetl </a>
 					<p>Aqui podras encontrar..."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
 					<iframe 
 						width="390" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=439&amp;height=240&amp;hl=en&amp;q=volcan%20popocatepetl%20+(VOLCAN)&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
 					</iframe>
-					<a href='https://www.symptoma.es/es/info/covid-19'>
-						<span></span>
+					<a href='https://www.symptoma.es/es/info/covid-19' class="tohide">
+						test coronavirus
 					</a>
 					<script 
 						type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=ebe7f9fb55bb86c74d47d755977876373a384c7c'>
 					</script>
 			</div>
+
 			<div class="divcon" id="divcon3">
 					<a href="EVENTOS.html" class="hipers"> Equinoccio 2021 </a>
 					<p>Aqui podras encontrar..."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
 					<iframe
 						width="390" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=439&amp;height=240&amp;hl=en&amp;q=piramide%20del%20sol%20+(TEOTIHUACAN)&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
 					</iframe>
-					<a href='https://www.symptoma.es/es/info/covid-19'>
-						<span></span>
+					<a href='https://www.symptoma.es/es/info/covid-19' class="tohide">
+						test coronavirus
 					</a>
 					<script 
 						type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=2dee056f690fe51821e2a8becfd7bb298fff7d79'>
 					</script>
 			</div>
+			
 		</div>
+		<!-- Footer -->
 		<div id="footer">
+			<!-- Seccion de contáctanos -->
 			<div id="contfooter">
 				<form name="footerForm">
 					<p><label>Nombre: </label>
@@ -170,12 +185,15 @@
 					<input type="button" onclick="objcontacto()" value="Enviar" id="buttonContact">
 				</form>
 			</div>
+			<!-- Encabezado Contáctanos -->
 			<div id="bxcont">
 				<p>Contáctanos</p>
 			</div>
+			<!-- Imagen del estado dentro de footer -->
 			<div id="bximgestadof">
 				<img src="IMAGENES/LOGO-GOBIERNO-ESTADO1.png" alt="Imagen del gobierno del estado">
 			</div>
+			<!-- Copyright -->
 			<div id="bxcopy">
 				<p>TODOS LOS DERECHOS RESERVADOS|EQUIPO 2|CODELLEGE-OTO-2020</p>
 			</div>

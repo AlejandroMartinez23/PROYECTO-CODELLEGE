@@ -3,21 +3,25 @@ body{
 	margin:0px;
 	padding: 0px;
 }
+/*Titulo de la pagina*/
 #header{
 	width: 50%;
 	margin: 2% auto;
+	text-align: center;
 	font-size: 2.3vw;
 }
+/*Barra de navegación*/
 #divNavBar{
 	padding: 0px 0%;
 	margin-top: 30px;
 }
+	/*Div contenedor dentro de #divNabar*/
 #menu{
 	position: relative;
 	padding: 0px 0%;
 	margin-left: 0;
 }
-#menu > ul{
+#menu > ul{ /*Afecta a los ul hijos directos de #menu*/
 	list-style: none;
 	width: 60%;
 	padding: 0px;
@@ -28,15 +32,13 @@ body{
 #menu ul{
 	list-style: none;
 }
+	/*Elementos de lista de ul dentro de #menu*/
 #menu .item{
 	float: left;
 	width: 30%;
 	position: relative;
 }
-#menu #submenu1{
-	background-color: rgba(255, 255, 255, 0);
-} 
-#menu .item a{
+#menu .item a{ /*Enlaces "Lugares turisticos, Historia y Bolsa de Trabajo"*/
 	text-align: center;
 	background-color: none;
 	text-decoration:none;
@@ -49,24 +51,10 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-#subitem{
-	position: absolute;
-	width: 100%;
-	padding:0px;
-}
-#menu .item ul a{
-	display: inline-block;
-	height: 20px;
+#menu .item ul a{ /*Enlaces "Zoológico de Zacango, Volcan de Popocatépetl"*/
 	border: 0px;
 	padding-top: 10px;
 	padding-bottom: 5px;
-	font-size: 1.2vw;
-}
-#menu #submenu1{
-	display: none;
-	padding-left: 0px;
-}
-#menu .item ul li a{
 	height: 15px;
 	width: auto;
 	display: flex;
@@ -74,12 +62,24 @@ body{
 	text-align: center;
 	font-size: 1.2vw;
 }
+	/*Menu desplegable de elemento "Lugares turísticos"*/
+#subitem{
+	position: absolute;
+	width: 100%;
+	padding:0px;
+}
+	/*Contenedor de elementos dentro de #subitem*/
+#menu #submenu1{
+	display: none;
+	padding-left: 0px;
+}
 #menu .item a:hover{
 	background-color: #FAEBD7;
 }
 #menu .item:hover #submenu1{
 	display: block;
 }
+/*Login*/
 #divLogin{
 	background: #9400D3;
 	position: absolute;
@@ -123,12 +123,7 @@ body{
 	position: inherit;
 	width: 70%;
 }
-.text{
-	text-align:center;
-}
-.cleaner{
-	clear: both;
-}
+/*Subtitulo "Equinoccio de primavera 2021"*/
 #subtitulo{
 	text-align: center;
 	width: 100%;
@@ -140,43 +135,41 @@ body{
 	padding: 0px;
 	display: block;
 }
+/*Div contenedor de logo de pagina, parte superior*/
 #bxbh{
 	position: absolute;
 	margin-left: 30px;
 	top:5px;
 }
+	/*Imagen logo de pagina*/
 #bh{
 	width: 10%;
 	height: auto;
 }
-img{
-	max-width: 100%;
-}
-.imgs{
-	height: 30%;
-	width: 2000px;
-}
-hr{
+hr{ /*hr dentro debajo de cada evento*/
 	border:2px solid red;
 	margin-top: 17px;
 }
+/*Div contenedor global de seccion de eventos*/
 .cajamadre{
 	padding: 2%;
 	box-sizing: border-box;
 	width: 80%;
 	margin-left: 10%;
 }
+	/*Div contenedor de eventos individuales*/
 .filacm{
 	display: flex;
 	align-items: center;
+	
 }
-.filacm img{
+.filacm img{ /*Imagenes de eventos dentro de .filacm*/
 	width: 100%;
 }
-.filacm .container-all{
+.filacm .container-all{ /*Contenedor de las imagenes en cada .filacm*/
 	width: 150%;
 }
-#bxinfo1{
+#bxinfo1{ /*Div de texto de cada evento*/
 	padding:2px 1% 2px 1%;
 	width: 90%;
 	display: inline-block;
@@ -187,6 +180,7 @@ hr{
 	background-color: whitesmoke;
 	font-family: 'Franklin Gothic Medium';
 }
+/*Subtitulos "Lorem Ipsum dolor sit amet"*/
 .subtitulo2{
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -201,14 +195,17 @@ hr{
 	height: 325px;
 	display: flex;
 }
-#bximgestadof{
+img{ /*Afecta a bximgestadof*/
+	max-width: 100%;
+}
+#bximgestadof{ /*Imagen estado dentro de footer*/
 	width: 25%;
 	height: auto;
 	position: absolute;
 	margin-left: 63%;
 	margin-top: 1%;
 }
-#bxcopy{
+#bxcopy{ /*Texto de copyright*/
 	position: absolute;
 	width: auto;
 	margin-left: 53%;
@@ -216,7 +213,7 @@ hr{
 	font-size: 1.3vw;
 	color: white;
 }
-#contfooter{
+#contfooter{ /*Contenedor de formulario de contáctanos*/
 	color: white;
 	width: 30%;
 	background-color: rgb(38, 36, 61);
@@ -233,7 +230,7 @@ hr{
 #contfooter #footerdoubts{
 	width: 90%;
 }
-#bxcont{
+#bxcont{ /*Titulo de contáctanos*/
 	color: white;
 	position: absolute;
 	display: inline-block;
@@ -244,7 +241,7 @@ hr{
 	border: 0px;
 	height:50px;
 }
-#buttonContact{
+#buttonContact{ /*Boton enviar - contactanos*/
 	background-color: lightblue;
 	font-weight: bold;
 	color:navy;
@@ -252,6 +249,7 @@ hr{
 #buttonContact:hover{
 	background-color: yellow;
 }
+/*Modificar propiedades cuando el ancho de la ventana mide menos de 800px*/
 @media only screen and (max-width: 800px) {
 	#divLogin{
 		width:10%;

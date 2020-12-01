@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="icon" type="image/png" href="IMAGENES/FAVICON.png">
+        <link rel="icon" type="image/png" href="IMAGENES/FAVICON.png"> <!-- Icono de la pestaña de la pagina -->
         <meta charset="utf-8">
         <meta name="author" content="EQUIPO 2"/>
         <meta name="description" content="lugares turisticos 2"/>
@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="HOJAS-DE-ESTILO/estilosfuncionpp.css">
     </head>
     <body>
+        <!--Login-->
         <div id="divLogin">
 			<img src="IMAGENES/LoginImg.png" style="width:30px;height:auto" id="imgLogin" onclick="mostrar()">
 			<input type="button" value="Login" onclick="mostrar()" class="button" id="botonLogin"></input>
@@ -25,10 +26,14 @@
 
 				<input type="button" value="Ocultar" onclick="ocultar()" class="button"></input>
 			</form>
+
 		</div>
+        <!--Div contenedor de logo de pagina, parte superior -->
         <div id="bxbh">
+            <!-- Logo de la pagina -->
             <a href="PAGINA-PRINCIPAL.html" title="Ir a Inicio"><img id="bh" src="IMAGENES/LOGO-GOBIERNO-ESTADO1.png"></a>
         </div>
+        <!-- Titulo de la pagina -->
         <h1 class="text" id="header"> ¡Lugares turisticos en el Estado de mexico! </h1>
 <br>
         <!--navbar-->
@@ -48,19 +53,25 @@
                 </ul>
             </div>
         </div>
-        <div class="cleaner">
-        </div>
+        <!-- Subtitulo de la pagina -->
         <h2 class="text" id="subtitulo">Volcan Popocatépetl</h2>
+        
+        <!-- Div contenedor de sección de cuadros de volcan -->
         <div id="cajamadre">
+            <!-- Divs-filas de #cajamadre -->
             <div class="fila">
+                <!-- Cada cuadro de texto y volcan -->
                 <div class="sectionfila" id="section1">
+                    <!-- Div imagen de volcan dentro de .sectionfila -->
                     <div class="cuadro">
                         <img src="IMAGENES/volcan.jfif" style="width: 100%; height:100%;">
                     </div>
+                    <!-- Div texto dentro de .sectionfila -->
                     <div class="bxinfo">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ipsum augue, maximus quis elementum in, iaculis eu erat. Aenean dictum quam sed mattis luctus. </p>
                     </div>
                 </div>
+
                 <div class="sectionfila">
                     <div class="cuadro">
                         <img src="IMAGENES/volcan2.jpg" style="width: 100%; height: 100%;">
@@ -69,6 +80,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ipsum augue, maximus quis elementum in, iaculis eu erat. Aenean dictum quam sed mattis luctus. </p>
                     </div>
                 </div>
+
                 <div class="sectionfila">
                     <div class="cuadro">
                         <img src="IMAGENES/volcan3.jpg" style="width: 100%; height: 100%;">
@@ -77,6 +89,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ipsum augue, maximus quis elementum in, iaculis eu erat. Aenean dictum quam sed mattis luctus. </p>
                     </div>
                 </div>
+
             </div>
             <div class="fila">
                 <div class="sectionfila">
@@ -87,6 +100,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ipsum augue, maximus quis elementum in, iaculis eu erat. Aenean dictum quam sed mattis luctus. </p>
                     </div>
                 </div>
+
                 <div class="sectionfila">
                     <div class="cuadro">
                         <img src="IMAGENES/volcan5.jpg" style="width: 100%; height: 100%;">
@@ -95,6 +109,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ipsum augue, maximus quis elementum in, iaculis eu erat. Aenean dictum quam sed mattis luctus. </p>
                     </div>
                 </div>
+
                 <div class="sectionfila">
                     <div class="cuadro">
                         <img src="IMAGENES/volcan6.jpg" style="width: 100%; height: 100%;">
@@ -103,9 +118,12 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ipsum augue, maximus quis elementum in, iaculis eu erat. Aenean dictum quam sed mattis luctus. </p>
                     </div>
                 </div>
+                
             </div>
         </div>
+        <!-- footer -->
         <div id="footer">
+            <!-- Seccion de contáctanos -->
 			<div id="contfooter">
 				<form name="footerForm">
 					<p><label>Nombre: </label>
@@ -120,12 +138,15 @@
 					<input type="button" onclick="objcontacto()" value="Enviar" id="buttonContact">
 				</form>
 			</div>
+            <!-- Encabezado Contáctanos -->
 			<div id="bxcont">
 				<p>Contáctanos</p>
 			</div>
+            <!-- Imagen del estado dentro de footer -->
 			<div id="bximgestadof">
 				<img src="IMAGENES/LOGO-GOBIERNO-ESTADO1.png" alt="Imagen del gobierno del estado">
 			</div>
+            <!-- Copyright -->
 			<div id="bxcopy">
 				<p>TODOS LOS DERECHOS RESERVADOS|EQUIPO 2|CODELLEGE-OTO-2020</p>
 			</div>

@@ -1,29 +1,30 @@
-html,body{
-	height: 100%;
-}
 body{
 	background-color: white;
 	margin: 0px;
 	padding: 0px;
 }
+/*Caja fija  en la parte superior de la pagina*/
 #bxen{
 	background-color: rgb(38, 36, 61);
 	position: fixed;
+	top: 0%;
 	width: 100%;
 	height: 100px;
 	z-index: 1;
 }
+/*Barra de navegación*/
 #divNavBar{
 	border: 0px;
 	padding: 0px 0%;
 	margin-top: 45px;
 }
+	/*Div contenedor dentro de #divNabar*/
 #menu{
 	position: relative;
 	padding: 0px 0%;
 	margin-left: 0;
 }
-#menu > ul{
+#menu > ul{ /*Afecta a los ul hijos directos de #menu*/
 	list-style: none;
 	width: 60%;
 	padding: 0px;
@@ -34,16 +35,25 @@ body{
 #menu ul{
 	list-style: none;
 }
+	/*Elementos de lista de ul dentro de #menu*/
 #menu .item{
 	float: left;
 	width: 25%;
 	position: relative;
 }
+	/*Menu desplegable de elemento "Lugares turísticos"*/
+#subitem{
+	position: absolute;
+	width: 100%;
+	padding:0px;
+}
+	/*Contenedor de elementos dentro de #subitem*/
 #menu #submenu1{
-	background-color: rgba(255, 255, 255, 0);
 	margin-left: -3%;
+	display: none;
+	padding-left: 0px;
 } 
-#menu .item a{
+#menu .item a{	/*Enlaces "Lugares turisticos, Eventos, Historia y Bolsa de Trabajo"*/
 	color: white;
 	text-align: center;
 	background-color: none;
@@ -56,32 +66,16 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-#subitem{
-	position: absolute;
-	width: 100%;
-	padding:0px;
-}
-#menu .item ul a{
-	display: inline-block;
+#menu .item ul a{ /*Enlaces "Zoológico de Zacango, Volcan de Popocatépetl"*/
 	height: 20px;
 	background-color: rgb(38, 36, 61);
 	border: 0px;
-	padding-top: 10px;
-	padding-bottom: 5px;
-	font-size: 15px;
-}
-#menu #submenu1{
-	display: none;
-	padding-left: 0px;
-}
-#menu .item ul li a{
 	padding-top: 5%;
 	padding-bottom: 5%;
 	width: auto;
 	display: flex;
 	position:inherit;
 	text-align: center;
-	background-color: rgb(38, 36, 61);
 	font-size: 1.3vw;
 }
 #menu .item a:hover{
@@ -90,9 +84,7 @@ body{
 #menu .item:hover #submenu1{
 	display: block;
 }
-.txts{
-	padding-top: 5px;
-}
+/*Login*/
 #divLogin{
 	border: 2px solid black;
 	background: #9400D3;
@@ -112,11 +104,6 @@ body{
 	margin-top: 7px;
 	border-radius: 50px;
 	color: white;   
-}
-@media only screen and (max-width: 800px) {
-	#divLogin{
-		width:10%;
-	}
 }
 #formLogin{
 	display:none;
@@ -139,6 +126,7 @@ body{
 	position: inherit;
 	width: 70%;
 }
+/*Logo de la página*/
 #imgestado{
 	margin-left: 5%;
 	position: absolute;
@@ -146,16 +134,12 @@ body{
 	width: 10%;
 	height: auto;
 }
-img{
-	max-width: 100%;
-}
+/*Imagenes dentro de carrusel*/
 .imgs{
 	height: 370px;
 	width: 100%;
 }
-#clear{
-	border:2px solid red;
-}
+/*Carrusel*/
 .container-all{
 	overflow: hidden;
 	position: relative;
@@ -183,6 +167,7 @@ img{
 	width: 100%;
 	height: 100%;
 }
+	/*Cuadros pequeños dentro de carrusel*/
 .pagination{
 	position: absolute;
 	bottom: 30px;
@@ -277,13 +262,14 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 		transform: translate3d(calc(-100% * 4), 0, 0);
 	}
 }
+/*sección de tres primeras noticias*/
 #divcons{
 	display: flex;
 	justify-content: center;
 	width: 100%;
 	height: 450px;
 }
-#divcons .divcon{
+#divcons .divcon{	/*Cada noticia individual de #divcons*/
 	width: 30%;
 	margin-left: 1%;
 	text-align: center;
@@ -292,20 +278,21 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 	text-align: justify;
 	height: 15%;
 }
-#divcon01{
+#divcon01{	/*Noticia individual 1 - #divcons*/
 	font-size: 1.5vw;
 	position: relative;
 	display:inline-block;
 	height: 100%;
 }
-#divcon02{
+
+#divcon02{	/*Noticia individual 2 - #divcons*/
 	font-size: 1.5vw;
 	position: relative;
 	margin-top: 0;
 	display:inline-block;
 	height: 100%;
 }
-#divcon03{
+#divcon03{	/*Noticia individual 3 - #divcons*/
 	font-size: 1.5vw;
 	position: relative;
 	background-color: white;
@@ -317,17 +304,17 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 #divcon03 img{
 	height: cover;
 }
-.hipers{
+.hipers{	/*Titulos de todas las noticias*/
 	color: black;
 	font-size:1.5vw; 
 	font-family: fantasy;
 	text-align:center;
 }
-.imgsmn{
+.imgsmn{	/*Imagenes de noticias dentro de #divcons*/
 	width: 100%;
 	height: 64%;
 }
-#conmas{
+#conmas{	/*Div conocer mas*/
 	background-color: rgba(255, 255, 255, 0);
 	position: relative;
 	justify-content: center;
@@ -344,49 +331,57 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 	background-color: white;
 	font-family: 'Franklin Gothic Medium';
 }
+/*Seccion de tres mapas de google maps*/
 #divcons2{
 	height: auto;
 	margin-bottom: 5%;
 	margin-top: 10%;
 	text-align: center;
 }
-#divcons2 .divcon{
+#divcons2 .divcon{ /*Cada secccion individual de #divcons2*/
 	width: 30%;
 	height: 100%;
 	margin-left: 1%;
 	font-size: 1.3vw;
 }
-#divcons2 .divcon a{
+#divcons2 .divcon a{ /*Enlaces - titulos de cada seccion de mapas*/
 	font-size: 1.5vw;
 	text-align: center;
+	display: hidden;
 }
-#divcons2 .divcon iframe{
+#divcons2 .divcon .tohide{ /*"Ocultar" Enlace obligatorio al usar google maps*/
+	color: white;
+	pointer-events: none;
+	cursor: default;
+
+}
+#divcons2 .divcon iframe{ /*Cada mapa de google maps*/
 	width: 100%;
-	/*height: auto;*/
 }
 #divcons2 .divcon p{
 	text-align: justify;
 }
-#divcon1{
+#divcon1{	/*Mapa 1 de #divcons2*/
 	position: relative;
 	margin-top: 2%;
 	margin-left: 0px;
 	margin-right: 0px;
 	display:inline-block;
 }
-#divcon2{
+#divcon2{ /*Mapa 2 de #divcons2*/
 	position: relative;
 	margin-top: 0px;
 	margin-left: 0px;
 	display:inline-block;
 }
-#divcon3{
+#divcon3{ /*Mapa 3 de #divcons2*/
 	position: relative;
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
 	display:inline-block;
 }
+/**/
 #footer{
 	background:  rgb(38, 36, 61);
 	position: relative;
@@ -395,14 +390,17 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 	height: 325px;
 	display: flex;
 }
-#bximgestadof{
+img{ /*afecta al bximgestadof*/
+	max-width: 100%;
+}
+#bximgestadof{	/*Imagen estado dentro de footer*/
 	width: 25%;
 	height: auto;
 	position: absolute;
 	margin-left: 63%;
 	margin-top: 1%;
 }
-#bxcopy{
+#bxcopy{	/*Texto de copyright*/
 	position: absolute;
 	width: auto;
 	margin-left: 53%;
@@ -410,7 +408,7 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 	font-size: 1.3vw;
 	color: white;
 }
-#contfooter{
+#contfooter{ /*Contenedor de formulario de contáctanos*/
 	color: white;
 	width: 30%;
 	background-color: rgb(38, 36, 61);
@@ -427,7 +425,7 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 #contfooter #footerdoubts{
 	width: 90%;
 }
-#bxcont{
+#bxcont{ /*Titulo de contáctanos*/
 	color: white;
 	position: absolute;
 	display: inline-block;
@@ -438,11 +436,17 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 	border: 0px;
 	height:50px;
 }
-#buttonContact{
+#buttonContact{ /*Boton enviar - contactanos*/
 	background-color: lightblue;
 	font-weight: bold;
 	color:navy;
 }
 #buttonContact:hover{
 	background-color: yellow;
+}
+/*Modificar propiedades cuando el ancho de la ventana mide menos de 800px*/
+@media only screen and (max-width: 800px) {
+	#divLogin{
+		width:10%;
+	}
 }

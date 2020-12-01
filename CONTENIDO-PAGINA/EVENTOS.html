@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="icon" type="image/png" href="IMAGENES/FAVICON.png">
+        <link rel="icon" type="image/png" href="IMAGENES/FAVICON.png"> <!-- Icono de la pestaña de la pagina -->
         <meta charset="utf-8">
         <meta name="author" content="EQUIPO 2"/>
         <meta name="description" content="eventos"/>
@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="HOJAS-DE-ESTILO/estilosfuncionpp.css">
     </head>
     <body>
+        <!--Login-->
         <div id="divLogin">
 			<img src="IMAGENES/LoginImg.png" style="width:30px;height:auto" id="imgLogin" onclick="mostrar()">
 			<input type="button" value="Login" onclick="mostrar()" class="button" id="botonLogin"></input>
@@ -26,41 +27,44 @@
 				<input type="button" value="Ocultar" onclick="ocultar()" class="button"></input>
 			</form>
 		</div>
+        <!--Div contenedor de logo de pagina, parte superior -->
         <div id="bxbh">
+            <!-- Logo de la pagina -->
             <a href="PAGINA-PRINCIPAL.html" title="Ir a Inicio"><img id="bh" src="IMAGENES/LOGO-GOBIERNO-ESTADO1.png"></a>
         </div>
+        <!-- Titulo de la pagina -->
         <h1 class="text" id="header"> ¡Eventos en el Estado de mexico! </h1>
 <br>
         <!--navbar-->
         <div id="divNavBar">
-                <div id="menu">
-                    <ul>
-                        <li class="item"><a>Lugares Turisticos</a>
-                            <div id="subitem">
-                                <ul id="submenu1">
-                                    <li><a href="LUGARES-TURISTICOS.html">Zoologico Zacango</a></li>
-                                    <li><a href="LUGARES-TURISTICOS2.html">Volcan Popocatepetl</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="item"><a href="HISTORIA.html">Historia</a></li>
-                        <li class="item"><a href="BOLSA-DE-TRABAJO.html">Bolsa de trabajo</a></li>
-                    </ul>
-                </div>
-        </div>
-        <div class="cleaner">
-        </div>
-        <h2 class="text" id="subtitulo"><ins>Equinoccio de primavera 2021</ins></h2>
-        <div class="cajamadre">
-            <div class="filacm">
-                <div class="container-all">
-                    <div class="slide">
-                        <div class="item-slide">
-                            <img class="imgs" src="IMAGENES/EQUINOCCIO.jpg">
+            <div id="menu">
+                <ul>
+                    <li class="item"><a>Lugares Turisticos</a>
+                        <div id="subitem">
+                            <ul id="submenu1">
+                                <li><a href="LUGARES-TURISTICOS.html">Zoologico Zacango</a></li>
+                                <li><a href="LUGARES-TURISTICOS2.html">Volcan Popocatepetl</a></li>
+                            </ul>
                         </div>
-                    </div>
+                    </li>
+                    <li class="item"><a href="HISTORIA.html">Historia</a></li>
+                    <li class="item"><a href="BOLSA-DE-TRABAJO.html">Bolsa de trabajo</a></li>
+                </ul>
+            </div>
+        </div>
+         <!-- Subtitulo de la pagina -->
+        <h2 class="text" id="subtitulo"><ins>Equinoccio de primavera 2021</ins></h2>
+
+        <!-- Div contenedor global de sección de eventos -->
+        <div class="cajamadre">
+            <!-- Div contenedor de eventos individuales -->
+            <div class="filacm">
+                <!-- Contenedor de las imagenes en cada .filacm -->
+                <div class="container-all">
+                    <img class="imgs" src="IMAGENES/EQUINOCCIO.jpg">
                 </div>
                 <div>
+                    <!-- Div de texto de cada evento -->
                     <div id="bxinfo1">
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
                     </div>
@@ -69,15 +73,12 @@
             <hr>
         </div>
 
+        <!-- Subtitulo "Lorem Ipsum dolor sit amet" -->
         <h2 class="subtitulo2"><ins>Lorem Ipsum</ins></h2>
         <div class="cajamadre">
             <div class="filacm">
                 <div class="container-all">
-                    <div class="slide">
-                        <div class="item-slide">
-                            <img class="imgs" src="IMAGENES/EQUINOCCIO1.jpg">
-                        </div>
-                    </div>
+                    <img class="imgs" src="IMAGENES/EQUINOCCIO1.jpg">
                 </div>
                 <div>
                     <div id="bxinfo1">
@@ -88,15 +89,12 @@
             <hr>
         </div>
 
+        <!-- Subtitulo "Lorem Ipsum dolor sit amet" -->
         <h2 class="subtitulo2"><ins>Lorem Ipsum</ins></h2>
         <div class="cajamadre">
             <div class="filacm">
                 <div class="container-all">
-                    <div class="slide">
-                        <div class="item-slide">
-                            <img class="imgs" src="IMAGENES/EQUINOCCIO3.jpg">
-                        </div>
-                    </div>
+                    <img class="imgs" src="IMAGENES/EQUINOCCIO3.jpg">
                 </div>
                 <div>
                     <div id="bxinfo1">
@@ -106,7 +104,10 @@
             </div>
             <hr>
         </div>
+
+        <!-- footer -->
         <div id="footer">
+            <!-- Seccion de contáctanos -->
 			<div id="contfooter">
 				<form name="footerForm">
 					<p><label>Nombre: </label>
@@ -121,12 +122,15 @@
 					<input type="button" onclick="objcontacto()" value="Enviar" id="buttonContact">
 				</form>
 			</div>
+            <!-- Encabezado Contáctanos -->
 			<div id="bxcont">
 				<p>Contáctanos</p>
 			</div>
+            <!-- Imagen del estado dentro de footer -->
 			<div id="bximgestadof">
 				<img src="IMAGENES/LOGO-GOBIERNO-ESTADO1.png" alt="Imagen del gobierno del estado">
 			</div>
+            <!-- Copyright -->
 			<div id="bxcopy">
 				<p>TODOS LOS DERECHOS RESERVADOS|EQUIPO 2|CODELLEGE-OTO-2020</p>
 			</div>

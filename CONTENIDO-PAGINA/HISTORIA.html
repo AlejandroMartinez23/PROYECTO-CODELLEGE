@@ -1,7 +1,7 @@
 <!DOCTYPE htmL>
 <html>
     <head>
-        <link rel="icon" type="image/png" href="IMAGENES/FAVICON.png">
+        <link rel="icon" type="image/png" href="IMAGENES/FAVICON.png"> <!-- Icono de la pestaña de la pagina -->
         <meta charset="utf-8">
         <meta name="author" content="EQUIPO 2"/>
         <meta name="description" content="historia"/>
@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="HOJAS-DE-ESTILO/estilosfuncionpp.css">
     </head>
     <body>
+        <!--Login-->
         <div id="divLogin">
 			<img src="IMAGENES/LoginImg.png" style="width:30px;height:auto" id="imgLogin" onclick="mostrar()">
 			<input type="button" value="Login" onclick="mostrar()" class="button" id="botonLogin"></input>
@@ -26,9 +27,12 @@
 				<input type="button" value="Ocultar" onclick="ocultar()" class="button"></input>
 			</form>
 		</div>
+        <!--Div contenedor de logo de pagina, parte superior -->
         <div id="bxbh">
+            <!-- Logo de la pagina -->
             <a href="PAGINA-PRINCIPAL.html" title="Ir a Inicio"><img id="bh" src="IMAGENES/LOGO-GOBIERNO-ESTADO1.png"></a>
         </div>
+        <!-- Titulo de la pagina -->
         <h1 class="text" id="header"> ¡Historia del Estado de mexico! </h1>
 <br>
         <!--navbar-->
@@ -48,14 +52,16 @@
                     </ul>
                 </div>
         </div>
-        <div id="eraser">
-        </div>
+        <!-- Subtitulo de la pagina -->
         <div id="header2">
             <h2 class="text" id="subtitulo">Historia politica y artistica del estado</h2>
         </div>
         
+        <!-- Primer div global con informacion y carrusel -->
         <div id="cajamadre1">
+            <!-- Div contenedor de carrusel dentro de #cajamadre1 -->
             <div class="cmsection1">
+                <!-- Carrusel dentro de #cajamadre1 -->
                 <div class="container-all1">
                     <div class="slide">
                         <div class="item-slide">
@@ -76,39 +82,56 @@
                     </div>
                 </div>
             </div>
+            <!-- Div contenedor de texto dentro de #cajamadre1 -->
             <div class="cmsection2">
+                <!-- Texto dentro de .cmsection2 dentro de #cajamadre1 -->
                 <div id="bxinfo1">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
                 </div>
             </div>
         </div>
+        <!-- Subtitulo "Lorem Ipsum Dolor Sit Amet" -->
         <h2 class="text" id="subtitulo2">Lorem Ipsum Sit Amet</h2>
+
+        <!-- Segundo div con informacion e imagen -->
         <div id="cajamadre2">
+            <!-- Div contenedor de texto dentro de #cajamadre2 -->
             <div id="cm2section1">
+                <!-- Texto dentro de .cmsection2 dentro de #cajamadre2 -->
                 <div id="bxinfo2">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
                 </div>
             </div>
+            <!-- Div contenedor de imagen dentro de #cajamadre2 -->
             <div id="cm2section2">
+                <!-- Imagen dentro de #cajamadre2 -->
                 <div id="container-all2">
                     <img src="IMAGENES/HISTORIA.jpg" id="imagencm2">
                 </div>
             </div>
             </div>
         </div>
+         <!-- Segundo div con informacion e imagen -->
         <h2 class="text" id="subtitulo2">Lorem Ipsum Sit Amet</h2>
+
+        <!-- Tercer div con informacion y carrusel -->
         <div id="cajamadre3">
+            <!-- Div contenedor de texto y carrusel -->
             <div id="subcaja">
+                <!-- Div contenedor de texto dentro de #subcaja -->
                 <div id="cm3section1">
+                    <!-- Texto dentro de .cm3section1 dentro de #cajamadre3 -->
                     <div id="bxinfo3">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
                     </div>
                 </div>
+                <!-- Div contenedor de carrusel dentro de #subcaja -->
                 <div id="cm3section2">
+                    <!-- Carrusel dentro de #cajamadre3 -->
                     <div id="container-all3">
                         <div class="slide">
                             <div class="item-slide">
@@ -131,7 +154,10 @@
                 </div>
             </div>
         </div>
+
+        <!-- footer -->
         <div id="footer">
+            <!-- Seccion de contáctanos -->
 			<div id="contfooter">
 				<form name="footerForm">
 					<p><label>Nombre: </label>
@@ -146,12 +172,15 @@
 					<input type="button" onclick="objcontacto()" value="Enviar" id="buttonContact">
 				</form>
 			</div>
+            <!-- Encabezado Contáctanos -->
 			<div id="bxcont">
 				<p>Contáctanos</p>
 			</div>
+            <!-- Imagen del estado dentro de footer -->
 			<div id="bximgestadof">
 				<img src="IMAGENES/LOGO-GOBIERNO-ESTADO1.png" alt="Imagen del gobierno del estado">
 			</div>
+            <!-- Copyright -->
 			<div id="bxcopy">
 				<p>TODOS LOS DERECHOS RESERVADOS|EQUIPO 2|CODELLEGE-OTO-2020</p>
 			</div>

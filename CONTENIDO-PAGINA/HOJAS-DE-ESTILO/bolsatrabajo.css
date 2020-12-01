@@ -3,6 +3,7 @@ body{
 	margin:0px;
 	padding: 0px;
 }
+/*Titulo de la pagina*/
 #titulo{
 	background-color: rgb(38, 36, 61);
 	text-align: center;
@@ -10,16 +11,18 @@ body{
 	color:white;
 	width: 50%;
 }
+/*Barra de navegación*/
 #divNavBar{
 	padding: 0px 0%;
 	margin-top:10px;
 }
+	/*Div contenedor dentro de #divNabar*/
 #menu{
 	position: relative;
 	padding: 0px 0%;
 	margin-left: 0;
 }
-#menu > ul{
+#menu > ul{ /*Afecta a los ul hijos directos de #menu*/
 	list-style: none;
 	width: 60%;
 	padding: 0px;
@@ -30,15 +33,13 @@ body{
 #menu ul{
 	list-style: none;
 }
+	/*Elementos de lista de ul dentro de #menu*/
 #menu .item{
 	float: left;
 	width: 30%;
 	position: relative;
 }
-#menu #submenu1{
-	background-color: rgba(255, 255, 255, 0);
-} 
-#menu .item a{
+#menu .item a{ /*Enlaces "Lugares turisticos, Eventos y Historia"*/
 	text-align: center;
 	background-color: none;
 	text-decoration:none;
@@ -51,24 +52,10 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-#subitem{
-	position: absolute;
-	width: 100%;
-	padding:0px;
-}
-#menu .item ul a{
-	display: inline-block;
-	height: 20px;
+#menu .item ul a{ /*Enlaces "Zoológico de Zacango, Volcan de Popocatépetl"*/
 	border: 0px;
 	padding-top: 10px;
 	padding-bottom: 5px;
-	font-size: 1.2vw;
-}
-#menu #submenu1{
-	display: none;
-	padding-left: 0px;
-}
-#menu .item ul li a{
 	height: 15px;
 	width: auto;
 	display: flex;
@@ -76,12 +63,24 @@ body{
 	text-align: center;
 	font-size: 1.2vw;
 }
+	/*Menu desplegable de elemento "Lugares turísticos"*/
+#subitem{
+	position: absolute;
+	width: 100%;
+	padding:0px;
+}
+	/*Contenedor de elementos dentro de #subitem*/
+#menu #submenu1{
+	display: none;
+	padding-left: 0px;
+}
 #menu .item a:hover{
 	background-color: #FAEBD7;
 }
 #menu .item:hover #submenu1{
 	display: block;
 }
+/*Login*/
 #divLogin{
 	background: #9400D3;
 	position: absolute;
@@ -125,20 +124,18 @@ body{
 	position: inherit;
 	width: 70%;
 }
-#header{
-	clear: both;
-	padding: 15px;
-}
+/*Subtitulo "Empresas más conocidas en el estado"*/
 #subtitulo{
-	text-align: center;
+	text-align: center;	
 	width: 100%;
-	margin-top: 93px;
+	margin-top: 100px;
 	height: 50px;
 	color: #32CD32;
 	top:10px;
 	padding: 0px;
 	display: block;
 }
+/*Div contenedor de cuadros de empresas*/
 #cajamadre{
 	margin-top: 10px;
 	border:2px solid black;
@@ -146,10 +143,12 @@ body{
 	background-color: #00CED1;
 	height: 700px;
 }
+	/*Cada fila de #cajamadre*/
 .fila{
 	padding:20px 3%;
 	height:300px;
 }
+	/*Cada cuadro de empresa*/
 .sectionfila{
 	background-color: #228B22;
 	position: inherit;
@@ -160,11 +159,11 @@ body{
 	margin-left: 3%;
 	display: inline-block;
 }
-.cuadro{
+.cuadro{ /*Cada imagen de empresa*/
 	width: 100%;
 	height: 60%;
 }
-.bxinfo{
+.bxinfo{ /*Cada Texto de empresa*/
 	background-color: #F5F5F5;
 	width: 96.8%;
 	height: 35%;
@@ -179,21 +178,15 @@ body{
 	border:2px solid #FF00FF;
 	transition-duration: 1s;
 }
+/*Contenedor de imagen logo de la pagina*/
 #bxbh{
 	position: absolute;
 	margin-left: 30px;
 	top:5px;
 }
-#bh{
+#bh{ /*Imagen logo de la pagina*/
 	width: 120px;
 	height: auto;
-}
-img{
-	max-width: 100%;
-}
-.imgs{
-	height: 400px;
-	width: 600px;
 }
 #footer{
 	background:  rgb(38, 36, 61);
@@ -203,14 +196,17 @@ img{
 	height: 325px;
 	display: flex;
 }
-#bximgestadof{
+img{ /*Afecta a logo de footer e imagenes dentro de #cajamadre*/
+	max-width: 100%;
+}
+#bximgestadof{ /*Imagen estado dentro de footer*/
 	width: 25%;
 	height: auto;
 	position: absolute;
 	margin-left: 63%;
 	margin-top: 1%;
 }
-#bxcopy{
+#bxcopy{  /*Texto de copyright*/
 	position: absolute;
 	width: auto;
 	margin-left: 53%;
@@ -218,7 +214,7 @@ img{
 	font-size: 1.3vw;
 	color: white;
 }
-#contfooter{
+#contfooter{ /*Contenedor de formulario de contáctanos*/
 	color: white;
 	width: 30%;
 	background-color: rgb(38, 36, 61);
@@ -235,7 +231,7 @@ img{
 #contfooter #footerdoubts{
 	width: 90%;
 }
-#bxcont{
+#bxcont{ /*Titulo de contáctanos*/
 	color: white;
 	position: absolute;
 	display: inline-block;
@@ -246,7 +242,7 @@ img{
 	border: 0px;
 	height:50px;
 }
-#buttonContact{
+#buttonContact{ /*Boton enviar - contactanos*/
 	background-color: lightblue;
 	font-weight: bold;
 	color:navy;
@@ -254,6 +250,7 @@ img{
 #buttonContact:hover{
 	background-color: yellow;
 }
+/*Modificar propiedades cuando el ancho de la ventana mide menos de 800px*/
 @media only screen and (max-width: 800px) {
 	#divLogin{
 		width:10%;

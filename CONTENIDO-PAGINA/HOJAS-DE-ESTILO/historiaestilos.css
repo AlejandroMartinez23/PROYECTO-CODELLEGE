@@ -3,22 +3,26 @@ body{
 	padding:0px;
 	margin: 0px;
 }
+/*Titulo de la pagina*/
 #header{
 	width: 50%;
+	text-align: center;
 	margin: auto;
 	margin-top: 2%;
 	font-size: 2.3vw;
 }
+/*Barra de navegación*/
 #divNavBar{
 	padding: 0px 0%;
 	margin-top:20px;
 }
+	/*Div contenedor dentro de #divNabar*/
 #menu{
 	position: relative;
 	padding: 0px 0%;
 	margin-left: 0;
 }
-#menu > ul{
+#menu > ul{ /*Afecta a los ul hijos directos de #menu*/
 	list-style: none;
 	width: 60%;
 	padding: 0px;
@@ -29,15 +33,13 @@ body{
 #menu ul{
 	list-style: none;
 }
+	/*Elementos de lista de ul dentro de #menu*/
 #menu .item{
 	float: left;
 	width: 30%;
 	position: relative;
 }
-#menu #submenu1{
-	background-color: rgba(255, 255, 255, 0);
-} 
-#menu .item a{
+#menu .item a{ /*Enlaces "Lugares turisticos, Eventos y Bolsa de Trabajo"*/
 	text-align: center;
 	background-color: none;
 	text-decoration:none;
@@ -50,24 +52,10 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-#subitem{
-	position: absolute;
-	width: 100%;
-	padding:0px;
-}
-#menu .item ul a{
-	display: inline-block;
-	height: 20px;
+#menu .item ul a{ /*Enlaces "Zoológico de Zacango, Volcan de Popocatépetl"*/
 	border: 0px;
 	padding-top: 10px;
 	padding-bottom: 5px;
-	font-size: 1.2vw;
-}
-#menu #submenu1{
-	display: none;
-	padding-left: 0px;
-}
-#menu .item ul li a{
 	height: 15px;
 	width: auto;
 	display: flex;
@@ -75,12 +63,24 @@ body{
 	text-align: center;
 	font-size: 1.2vw;
 }
+	/*Menu desplegable de elemento "Lugares turísticos"*/
+#subitem{
+	position: absolute;
+	width: 100%;
+	padding:0px;
+}
+	/*Contenedor de elementos dentro de #subitem*/
+#menu #submenu1{
+	display: none;
+	padding-left: 0px;
+}
 #menu .item a:hover{
 	background-color: #FAEBD7;
 }
 #menu .item:hover #submenu1{
 	display: block;
 }
+/*Login*/
 #divLogin{
 	background: #9400D3;
 	position: absolute;
@@ -124,19 +124,9 @@ body{
 	position: inherit;
 	width: 70%;
 }
-.text{
-	text-align:center;
-}
-#eraser{
-	clear: both;
-}
-#header2{
-	position: relative;
-	top: 30px;
-	width: 50%;
-	margin-left: 40%;
-}
+/*Subtitulo "Historia politica y artistica del estado"*/
 #subtitulo{
+	position: relative;
 	margin-top: 50px;
 	margin-bottom: 20px;
 	text-align: center;
@@ -146,23 +136,26 @@ body{
 	top:10px;
 	padding: 0px;
 	display: block;
+	top: 30px;
+	width: 50%;
+	margin-left: 40%;
 }
+/*Div contenedor de logo de pagina, parte superior*/
 #bxbh{
 	position: absolute;
 	left: 2%;
 	top:1%;
 }
+	/*Imagen logo de pagina*/
 #bh{
 	width: 10%;
 	height: auto;
 }
-img{
-	max-width: 100%;
-}
-.imgs{
+.imgs{ /*Evita que las imagenes del carrusel disminuyan su altura y anchura*/
 	height: 100%;
 	width: 100%;
 }
+/*Primer div global con informacion y carrusel*/
 #cajamadre1{
 	background-color: #D2B48C;
 	display: flex;
@@ -171,11 +164,13 @@ img{
 	align-items: center;
 	text-align: justify;
 }
+	/*Div contenedor de carrusel dentro de #cajamadre1*/
 .cmsection1{
 	display: inline-block;
 	width: 20%;
 	padding: 0px 6% 1% 6%;
 }
+	/*Div contenedor de texto dentro de #cajamadre1*/
 .cmsection2{
 	background-color: white;
 	margin-left: 2.3%;
@@ -185,7 +180,7 @@ img{
 	width: 63%;
 	height:200px;
 }
-#bxinfo1{
+#bxinfo1{ /*Texto dentro de .cmsection2 dentro de #cajamadre1*/
 	padding: 2px;
 	display: flex;
 	text-align: justify;
@@ -195,7 +190,7 @@ img{
 	padding: 5px;
 	width:98%;
 }
-.container-all1{
+.container-all1{ /*Carrusel dentro de #cajamadre1*/
 	border:2px solid;
 	overflow: hidden;
 	position:relative;
@@ -204,6 +199,7 @@ img{
 	height: auto;
 	width: 100%;
 }
+/*Subtitulos "Lorem Ipsum Dolor Sit Amet"*/
 #subtitulo2{
 	margin-top: 20px;
 	text-align: center;
@@ -214,7 +210,7 @@ img{
 	padding: 0px;
 	display: block;
 }
-/**/
+/*Segundo div con informacion e imagen*/
 #cajamadre2{
 	background-color:#D2B48C;
 	box-sizing: border-box;
@@ -227,6 +223,7 @@ img{
 	height: 500px;
 	width: 90%;
 }
+	/*Div contenedor de texto dentro de #cajamadre2*/
 #cm2section1{
 	background-color: white;
 	border:2px solid black;
@@ -234,6 +231,7 @@ img{
 	width: 55%;
 	display: inline-block;
 }
+	/*Div contenedor de imagen dentro de #cajamadre2*/
 #cm2section2{
 	background-color: none;
 	display: flex;
@@ -242,23 +240,24 @@ img{
 	height:98%;
 	width: 45%;
 }
-#bxinfo2{
+
+#bxinfo2{	/*Texto dentro de .cmsection2 dentro de #cajamadre2*/
 	padding: 1%;
 	text-align: justify;
 	font-size: 1.5vw;
 }
-#container-all2{
+#container-all2{ /*Imagen dentro de #cajamadre2*/
 	overflow: hidden;
 	position:relative;
 	border-radius: 6px;
 	height:85%;
 	width: 90%;
 }
-#imagencm2{
+#imagencm2{  /*Evita que la imagen disminuya su altura y ancho*/
 	width:100%;
 	height: 100%;
 }
-/**/
+/*Tercer div con informacion y carrusel*/
 #cajamadre3{
 	background-color: #D2B48C;
 	padding: 2%;
@@ -268,11 +267,13 @@ img{
 	margin-left: 5%;
 	box-sizing: border-box;
 }
+	/*Div contenedor de texto y carrusel*/
 #subcaja{
 	border:2px solid black;
 	background-color: white;
 }
-#cm3section1{
+
+#cm3section1{	/*Div contenedor de texto dentro de #subcaja*/
 	padding: 25%;
 	background-color: white;
 	padding: 0px 15px;
@@ -281,14 +282,14 @@ img{
 	text-align: justify;
 	font-size: 1.39vw;
 }
-#cm3section2{
+#cm3section2{ /*Div contenedor de carrusel dentro de #subcaja*/
 	background-color: white;
 	display: flex;
 	height: 50%;
 	width: 100%;
 	align-items: center;
 }
-#container-all3{
+#container-all3{ /*Carrusel dentro de #cajamadre3*/
 	overflow: hidden;
 	position:relative;
 	border-radius: 6px;
@@ -342,14 +343,17 @@ img{
 	height: 325px;
 	display: flex;
 }
-#bximgestadof{
+img{ /*Afecta a bximgestadof*/
+	max-width: 100%;
+}
+#bximgestadof{ /*Imagen estado dentro de footer*/
 	width: 25%;
 	height: auto;
 	position: absolute;
 	margin-left: 63%;
 	margin-top: 1%;
 }
-#bxcopy{
+#bxcopy{ /*Texto de copyright*/
 	position: absolute;
 	width: auto;
 	margin-left: 53%;
@@ -357,7 +361,7 @@ img{
 	font-size: 1.3vw;
 	color: white;
 }
-#contfooter{
+#contfooter{ /*Contenedor de formulario de contáctanos*/
 	color: white;
 	width: 30%;
 	background-color: rgb(38, 36, 61);
@@ -374,7 +378,7 @@ img{
 #contfooter #footerdoubts{
 	width: 90%;
 }
-#bxcont{
+#bxcont{ /*Titulo de contáctanos*/
 	color: white;
 	position: absolute;
 	display: inline-block;
@@ -385,7 +389,7 @@ img{
 	border: 0px;
 	height:50px;
 }
-#buttonContact{
+#buttonContact{ /*Boton enviar - contactanos*/
 	background-color: lightblue;
 	font-weight: bold;
 	color:navy;
@@ -393,12 +397,13 @@ img{
 #buttonContact:hover{
 	background-color: yellow;
 }
+/*Modificar propiedades cuando el ancho de la ventana mide menos de 800px*/
 @media only screen and (max-width: 800px) {
 	#divLogin{
 		width:10%;
 	}
 	#subtitulo{
-		width: 120%;
-		font-size: 3.6vw
+		width: 50%;
+		font-size: 3.2vw
 	}
 }

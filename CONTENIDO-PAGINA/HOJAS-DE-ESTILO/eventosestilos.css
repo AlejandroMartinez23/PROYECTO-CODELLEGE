@@ -162,16 +162,19 @@ hr{
 }
 .cajamadre{
 	padding: 2%;
+	box-sizing: border-box;
+	width: 80%;
+	margin-left: 10%;
 }
 .filacm{
 	display: flex;
 	align-items: center;
 }
-.cmimagen{
-	position: relative;
-	margin-left:5%;
-	height: auto;
+.filacm img{
 	width: 100%;
+}
+.filacm .container-all{
+	width: 150%;
 }
 #bxinfo1{
 	padding:2px 1% 2px 1%;

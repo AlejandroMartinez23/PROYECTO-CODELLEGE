@@ -5,9 +5,9 @@ body{
 }
 #header{
 	width: 50%;
-	margin: 2% auto;
+	margin: auto;
+	margin-top: 2%;
 	font-size: 2.3vw;
-	margin-top: 0;
 }
 #divNavBar{
 	padding: 0px 0%;
@@ -149,6 +149,8 @@ body{
 }
 #bxbh{
 	position: absolute;
+	left: 2%;
+	top:1%;
 }
 #bh{
 	width: 10%;
@@ -216,7 +218,7 @@ img{
 #cajamadre2{
 	background-color:#D2B48C;
 	box-sizing: border-box;
-	padding: 5px 1% 5px 1%;
+	padding: 2% 1% 2% 1%;
 	display: flex;
 	align-items: center;
 	border: 0px;
@@ -259,15 +261,19 @@ img{
 /**/
 #cajamadre3{
 	background-color: #D2B48C;
-	padding: 50px;
-	margin: 10px 0px 10px 0px;
-	height: 500px;
+	padding: 2%;
+	margin: 10px 0px 25px 0px;
+	height: 535px;
+	width: 90%;
+	margin-left: 5%;
+	box-sizing: border-box;
 }
 #subcaja{
 	border:2px solid black;
 	background-color: white;
 }
 #cm3section1{
+	padding: 25%;
 	background-color: white;
 	padding: 0px 15px;
 	border: 0px;

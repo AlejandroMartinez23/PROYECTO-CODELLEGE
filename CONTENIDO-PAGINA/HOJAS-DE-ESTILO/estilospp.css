@@ -295,7 +295,6 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 #divcon01{
 	font-size: 1.5vw;
 	position: relative;
-	margin-top: 0;
 	display:inline-block;
 	height: 100%;
 }
@@ -370,7 +369,7 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"]{
 }
 #divcon1{
 	position: relative;
-	margin-top: 0px;
+	margin-top: 2%;
 	margin-left: 0px;
 	margin-right: 0px;
 	display:inline-block;

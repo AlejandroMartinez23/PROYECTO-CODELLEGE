@@ -49,7 +49,7 @@ body{
 }
 	/*Contenedor de elementos dentro de #subitem*/
 #menu #submenu1{
-	margin-left: -3%;
+	/*margin-left: -3%;*/
 	display: none;
 	padding-left: 0px;
 } 
@@ -76,7 +76,7 @@ body{
 	display: flex;
 	position:inherit;
 	text-align: center;
-	font-size: 1.3vw;
+	font-size: 1.2vw;
 }
 #menu .item a:hover{
 	background-color: #4a4a4a;
